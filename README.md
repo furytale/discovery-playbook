@@ -58,7 +58,9 @@ DBR is not required for a single bounded question without a flow problem. In a s
 
 ## Foundations and development
 
-Practical experience explains the choice of problems, but does not by itself establish the effectiveness of the rules. The playbook's examples are hypothetical. Participants' recollections do not establish other people's motives or prove universal causes of success or failure.
+The playbook is grounded in Anton Kazka's firsthand professional practice and reflection on that experience. This explains the choice of problems, but does not by itself establish the effectiveness of the rules. Brief illustrations explain their use without publishing case histories. Firsthand accounts are evidence of what the author did and observed; they do not establish other people's motives or prove universal causes of success or failure.
+
+Selected refinements draw on Teresa Torres, *Continuous Discovery Habits: Discover Products That Create Customer Value and Business Value* (Product Talk LLC, 2021): intended effects (chs. 3, 11), comparing options and testing assumptions (chs. 2, 5, 9–10), shared understanding (chs. 1–2, 13), and continued learning (chs. 1, 5, 11, 14). Torres's model includes a product trio and at least weekly customer touchpoints by the team building the product. Competence-based participation, no fixed quota of alternatives, and finite-engagement boundaries are this playbook's adaptations to wider contexts, not her full model. DBR has a separate source and purpose.
 
 After applying the playbook, review which assumption changed, where a decision was lost, and what helped people make it. Add a rule when a specific problem recurs and the cost of a safeguard is understood. A small question does not require a separate retrospective meeting.
 

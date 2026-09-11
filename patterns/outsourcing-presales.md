@@ -43,6 +43,8 @@ Before starting a dependent check, make sure the necessary specialist or access 
 
 Preparing a conclusion, reviewing its substance, and choosing an action are different functions. The discovery lead keeps the next question in focus, organizes evidence gathering, brings the results together, and raises blockers. Assigning functions does not replace the subject expertise needed for the check.
 
+Bring relevant specialists and affected client and supplier stakeholders into the work while they can still change the framing, options, or interpretation. Share the purpose, relevant evidence, plausible alternatives, trade-offs, and specific input needed before final review. Participants may bring contrary evidence, constraints, or a better option.
+
 <a id="handoff-map"></a>
 ### What to hand over between participants
 
@@ -66,9 +68,9 @@ flowchart TD
     O -->|No decision| W[Decision<br/>pending]
 ```
 
-This is an illustrative route for a question involving several participants, not four mandatory people or departments. A simple question can bypass it. The next action may also be a pause or a decision not to proceed; the recipient is whoever is assigned the next piece of work. Completed analysis does not mean a decision has been made, and silence does not mean agreement. While the decision is pending, dependent implementation is not authorized; permissible independent work continues.
+This map shows delegation and transfer boundaries. It does not replace joint problem framing or prescribe a sequence inside a product team. It does not require four separate people or departments; a simple question can bypass it. The next action may be a pause or a decision not to proceed; its recipient is whoever is assigned that work. Completed analysis is not a decision, and silence is not agreement. While a decision is pending, dependent implementation is not authorized; permissible independent work continues.
 
-The recipient must understand the assigned check. **Delegating a check does not transfer authority over budget, scope, or acceptance of residual risk.** Correcting a factual error requires appropriate evidence; management escalation requires a choice of action. A manager can fund a check or choose a workaround, but cannot declare that an unconfirmed API capability exists. A conclusion with a known contradiction must not be carried into the estimate as confirmed.
+The recipient must understand the assigned check. Teams can act within their delegated authority; shared understanding does not expand it. **Delegating a check does not transfer authority over budget, scope, or acceptance of residual risk.** Correcting a factual error requires appropriate evidence; management escalation requires a choice of action. A manager can fund a check or choose a workaround, but cannot declare that an unconfirmed API capability exists. A conclusion with a known contradiction must not be carried into the estimate as confirmed.
 
 <a id="responsibility-map"></a>
 ### Who prepares, reviews, and chooses the action
@@ -91,7 +93,7 @@ Technical review, including permitted automated review, does not confer authorit
 
 For example, an allocation of 20–25 hours may define available capacity, but does not promise an equally precise estimate for every request. This is an illustrative example, not a standard. Before starting, agree on what will be checked, what result will be handed over, and what evidence will be enough for the next action.
 
-If the limit includes a technical test, you can agree to provide a report on the conditions checked and their limitations. The limit alone cannot imply a promise that the required capability will be confirmed. Agree explicitly on acceptance criteria for paid work; winning the next deal or launching the product must not replace those criteria retrospectively.
+If the limit includes a technical test, you can agree to provide a report on the conditions checked and their limitations. The limit alone cannot imply a promise that the required capability will be confirmed. Agree explicitly on acceptance criteria for paid work. The intended business effect explains its purpose; it does not replace those criteria or guarantee results beyond the engagement's scope or control.
 
 At the effort limit, review the evidence gathered. Options include an estimate for the confirmed scope, a narrower option, another bounded check, waiting for an external condition, or stopping. Exhausting the budget does not prove readiness. Remaining questions do not automatically authorize further spending either: the next check must be capable of changing the decision.
 
@@ -146,6 +148,8 @@ A simple handoff safeguard: preserve the label “assumption pending verificatio
 
 Completing a description, signing off on commitments, and going into operation may require different depths of investigation. An open question need not block everything at once: identify exactly which action depends on it, who is responsible, and when the answer is needed. Confirming the original plan is also a valid result.
 
+A finite engagement can finish under its agreed acceptance criteria while later product results remain unknown. For a consequential choice, hand over the material assumptions, the observation that matters, and the review trigger. Continuing observation needs a receiving owner who accepts the responsibility and has capacity, access, and resources, or separately agreed follow-on scope. If no one can take it on, state the gap; naming a recipient does not create a feedback loop or extend the engagement into unpaid monitoring.
+
 <a id="flow-control"></a>
 ## Flow control when discovery becomes a queue
 
@@ -169,7 +173,7 @@ flowchart TD
     D -.->|Capacity| C
 ```
 
-This is a conceptual diagram of the adaptation: solid arrows show the movement of work; dotted arrows show release control. **Preparing inputs and starting an active check are different.** Preparing the next input does not require waiting for the buffer to empty or stockpiling research; having a queue does not authorize starting everything at once. New work is released according to the constraint's capacity. A pending decision does not authorize dependent implementation; if agreement is holding up the flow, it can itself become the current constraint.
+This is a conceptual diagram of the adaptation: solid arrows show the movement of work; dotted arrows show release control. **Preparing inputs and starting an active check are different.** Preparing the next input does not require waiting for the buffer to empty or stockpiling research; having a queue does not authorize starting everything at once. New work is released according to the constraint's capacity. Comparing alternatives does not release additional tests beyond that capacity. A pending decision does not authorize dependent implementation; if agreement is holding up the flow, it can itself become the current constraint.
 
 Work at the current constraint sets the pace of the flow. The constraint is not automatically the BA and architect: it may be a client's subject matter expert, a person making product decisions, a specialist in mandatory requirements, or an available test environment. It can change. A ready input has a clear question, context, prior promises, and the information, people, or environment needed for its next check. The buffer is not a BRD or a pile of unprocessed documents; the rope is a release rule, not a call or a document-writing stage.
 

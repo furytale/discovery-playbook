@@ -12,7 +12,7 @@ A small, reversible change may need only a 20-minute conversation: choose the ch
 
 The first **decision** means “what choice are we preparing to make?” The final **decision / stop** means “what have we chosen, and what do we do now?”
 
-The rules and hypothetical examples below are proposals, not accounts of specific client projects. The Core does not prescribe team composition, interview counts, a document set, or the duration of discovery.
+The rules draw on the author's firsthand practice and [selected external ideas](README.md#foundations-and-development); the explicitly hypothetical example below illustrates their use rather than reconstructing a particular engagement. The Core does not prescribe team composition, interview counts, a document set, or the duration of discovery.
 
 <a id="core-decision-map"></a>
 ## Map of the next action
@@ -64,7 +64,7 @@ For example, instead of “audit the platform”:
 
 > Decide which parts of the existing system can support the first client use case and what must be built from scratch.
 
-The answer has not been chosen yet, but the purpose of the check is clear.
+Explain whose situation should improve, what change would matter to them and the business, and why the action could produce it. Name an available signal that could inform that belief and what must not get worse. Delivering a capability is an **output**; using it is a **local signal**; the intended benefit is an **outcome**. Neither delivery nor usage alone proves that benefit. The connection between action and effect remains something to examine.
 
 You do not have to list every option immediately. It is enough to identify which action cannot yet be justified, why it matters now, and when an answer is needed. “Prove that our option is best” replaces investigation with a defense of a decision already made.
 
@@ -72,7 +72,7 @@ You do not have to list every option immediately. It is enough to identify which
 
 Participants share an understanding of the decision being prepared, why it is needed, and who will use the result. A complete product vision for the next several years is not required.
 
-If the eventual use case is still unclear, you can agree on a bounded search for an initial use case. That is a separate task with its own limits, not a reason to design everything imaginable at once.
+If the path to an outcome is unclear, agree on a bounded learning goal, such as finding an initial use case, instead of inventing a performance target. A technical or operational benefit can be appropriate to the decision; a small change does not require a metric hierarchy, numeric baseline, or market-demand study.
 
 **Checking question:** “What will we be able to decide or do after this work that we cannot currently justify?”
 
@@ -98,6 +98,8 @@ For example:
 > We plan to automate CRM setup, but have not yet confirmed that the available permissions and APIs allow the required operations. If they do not, the use case and scope will change.
 
 This is more specific than “there are integration risks”: it shows exactly what is unknown and why it matters.
+
+For a consequential choice that remains open, compare meaningfully different ways to meet the same understood need or intended effect. A process change, narrower integration, or retaining the current approach may be viable alternatives if they fit the constraints. Identify what must hold for each to help; a shared assumption may allow one check to inform several options. There is no fixed quota of alternatives or assumptions, and no need to invent weak options or reopen a justified routine change.
 
 Priority depends on the consequences of an error, whether the action can be reversed, and the cost of checking. Consider probability when there is a basis for it; percentages and scores are not needed just for presentation.
 
@@ -154,7 +156,9 @@ The table connects a question, evidence, and competence; it is not a staffing pl
 
 A job title does not guarantee competence: experience with product telemetry is not the same as experience researching a new market. A BA or architect may have the required skills; expert opinion still does not replace evidence from the audience about its behavior.
 
-A practical default is a small ongoing team whose members can combine skills, with a specialist involved for the check that needs them. Account for availability and time to interpret the result. Not everyone needs every meeting; one person with the right skills is sometimes enough. If a skill is missing, narrow the finding, bring in help, or defer the dependent work. More AI-generated text does not fill that gap.
+A practical default is a small team combining relevant skills, with specialists involved while they can still change the question, options, or interpretation. Product, design, engineering, research, and domain perspectives matter where the question needs them, not only at final review. For one actual scenario, compare participants' understanding, identify any differences, and choose the next check if needed. Individual preparation, asynchronous input, and a focused discussion can coexist; this is not a required workshop or attendance list. Account for availability and interpretation time. If a skill is missing, narrow the finding, bring in help, or defer dependent work; more AI-generated text does not fill that gap.
+
+Choose the smallest **meaningful and admissible** check of the material assumption, rather than automatically building an MVP or choosing the cheapest artifact. Before testing, agree what behavior or system result would support or challenge the assumption, under which conditions, and how it could change the choice. A result may be inconclusive or reveal a flawed test; consider plausible competing interpretations. Do not silently move the threshold to rescue a preferred idea. Existing applicable evidence may make another test unnecessary.
 
 Distinguish observation, interpretation, and an accepted assumption. A recommendation proposes an action on that basis; a decision records the choice of an authorized participant.
 
@@ -164,7 +168,7 @@ The weight of a source depends on the question, proximity to the event, coverage
 
 You can explain what has been established, on what basis, under which conditions, and what remains unchecked. The result lets you compare options, rule one out, or acknowledge that the chosen check did not answer the question.
 
-**“Not confirmed” does not automatically mean “disproved.”** Nor does the absence of disproof confirm a hypothesis.
+**“Not confirmed” does not automatically mean “disproved.”** Nor does the absence of disproof confirm a hypothesis. A failed small test does not reject an entire customer need; a positive one does not establish a population-wide rate or satisfy an unmet mandatory safety condition.
 
 **Checking question:** “Does this evidence answer our question, or does it merely look related?”
 
@@ -245,11 +249,11 @@ The outcome may be to continue with explicit residual risk within the decision o
 
 Accepting risk does not turn an assumption into a fact or waive mandatory conditions for safe action. For a remaining material risk, the consequences, the person responsible for the agreed action, and the condition for revisiting it must be clear. A lack of response does not mean that risk has been accepted.
 
-Record material decisions where the team actually looks for its tasks and commitments. If a decision changes scope or an assumption behind the estimate, the relevant materials must change. A known contradiction must not silently pass into requirements, an estimate, or implementation. Hand over the chosen option along with its limits. There is no need to copy the entire research archive.
+Record material decisions where the team actually looks for its tasks and commitments. If a decision changes scope or an assumption behind the estimate, the relevant materials must change. A known contradiction must not silently pass into requirements, an estimate, or implementation. Hand over the chosen option, its limits, and relevant assumptions, without copying the entire research archive.
 
 ### When it is enough
 
-People whose work depends on the decision share an understanding of the next step, its boundaries, and the remaining conditions. It is clear who is responsible for the action and what would prompt a review: for example, a different use case, a material schedule change, or the result of the next check.
+People whose work depends on the decision share an understanding of the next step, its boundaries, and the remaining conditions. Identify who is responsible for carrying out the action. For a consequential choice, also identify who will observe later results, which observation matters to the intended effect, and when or under what conditions to reconsider. Existing tasks, telemetry, operating reviews, or customer contact can support this; a new register is unnecessary. Closing this question does not establish later impact or end an ongoing product team's customer learning. A finite engagement can still finish under its agreed criteria; any gap in responsibility or resources for follow-through must remain visible.
 
 **Analysis may be complete while a management decision is still pending.** Keep those states separate. A lack of response does not mean agreement, nor does it oblige the person doing the work to keep adding to the materials indefinitely. If a decision is pending, identify who needs to answer by when, who will escalate a delay, and which dependent work is not yet authorized.
 

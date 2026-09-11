@@ -18,7 +18,7 @@ Market reports, web research, and competitor analysis help reveal context, alter
 
 A founder does not have to set up a research department in advance. Finding a first use case requires audience and market research skills; if someone on the current team has them, a separate role is unnecessary. If those skills are missing, a product specialist with the relevant skills can join a specific check, with time allowed to interpret its results, following the guidance on choosing competencies in [Evidence](../core.md#evidence).
 
-Talk to people who actually encounter the suspected problem. Examine a recent case: what happened, how they handled it, what it cost them, and who chooses and pays for a solution. Then test a specific proposal in a suitable format: observing use of a prototype, providing the service manually, or running a bounded pilot. The format depends on the question; an interview alone does not test behavior in actual use.
+Talk to people who actually encounter the suspected problem. A research question such as “Where does handling requests create avoidable work?” can lead to an interview prompt: “Walk me through the last request you had to handle twice.” Examine what happened, how they handled it, what it cost them, and who chooses and pays for a solution. Their account provides evidence of that experience; distinguish their explanation from what the case establishes. An interview alone does not test behavior in actual use.
 
 Distinguish polite interest from action: someone supplied an example, made time, tried a new approach, or returned to it. Even this behavior in a small selected group does not establish market size or sustained demand. Rejection and a lack of repeat use also provide grounds to reconsider the next step.
 
@@ -28,7 +28,7 @@ Technical feasibility and user value require different checks. A working prototy
 
 Before a pilot, define its participants, one scenario, time and spending limits, permitted manual work, and an observable result. Agree on the outcomes that would lead you to expand the work, change the proposal, or stop. Mandatory conditions for safe action still apply to a small pilot.
 
-For example, you could manually help a few teams handle one type of request and check whether they want to repeat the experience. This provides a basis for the next check; automating every process remains a separate decision.
+In the request-handling example, consider whether clarifying responsibility or adding a narrow automation could reduce repeated work. Both may depend on receiving complete information. Check that shared assumption on recent requests before building either solution. If a gap remains, choose an appropriate next check: observation of a prototype, manual provision of the service, or a bounded pilot. There is no requirement to build parallel MVPs; use the [assumption-testing boundaries in Core](../core.md#evidence).
 
 If the idea depends on temporary interest in a technology or market, compare delivery time with the conditions underpinning the bet. The observation that “there is interest now” may be outdated by the time the product ships. Revisit that assumption before an expensive expansion; sometimes a shorter pilot can provide a useful answer sooner.
 
