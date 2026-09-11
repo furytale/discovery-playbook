@@ -2,7 +2,7 @@
 
 [Back to the Playbook](README.md)
 
-> **Discovery helps establish a sufficient basis for the next material action—or a reasoned decision not to take it.**
+> **Discovery helps establish a sufficient basis for the next consequential action—or a reasoned decision not to take it.**
 
 The Core has five elements: **decision, uncertainty, evidence, sufficient depth, decision / stop**.
 
