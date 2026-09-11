@@ -19,7 +19,7 @@ Depending on the direction, the question might be:
 - **Platform capability:** which product will use it first, and does that product's result justify developing, deploying, and maintaining the shared mechanism?
 - **Material change across several products:** can the first transition preserve the necessary compatibility and current commitments?
 
-These are examples of decisions, not a mandatory research list. For a clear, reversible change, a short review of existing data may be enough.
+These are examples of decisions, not a mandatory research list. Connect the chosen action to whose situation should improve, the expected customer and business benefit, a useful signal, and conditions that must not deteriorate. If the path is unclear, a bounded learning goal can guide the next check. For a clear, reversible change, a short review of existing data may be enough.
 
 ## Use existing data within its limits
 
@@ -45,11 +45,15 @@ Distinguish an unknown fact from a decision that has not been made. Migration fe
 
 Choose a boundary that lets you test the next question: one scenario, segment, partner, or product. Before starting, agree on acceptable costs and timing, an observable result, conditions for stopping, and the people responsible for operations. Specify how to disable or restore the solution; if the action is irreversible, account for that when choosing the scale and depth of the check.
 
-For example, an AI assistant could prepare drafts for a limited group of operators. Check its usefulness in their work, the types of errors, and the time needed to correct them. The decision to expand the pilot depends on these results and the conditions for handling data. Using a model does not by itself justify automatically taking actions on an operator's behalf.
+For example, an AI assistant could prepare drafts for a limited group of operators. Shipping it is an output and draft usage is a local signal; the intended benefit could be less operator effort and faster service for customers. Check total handling and correction time, and track consequential errors: usage alone does not establish reduced effort, and less effort alone does not prove a business benefit. Expansion depends on these results and data-handling conditions. Using a model does not justify automatically acting on an operator's behalf.
 
 A small scale does not remove mandatory security and compliance requirements. Pilot success applies to the tested conditions; a broader launch may require additional evidence.
 
 At the review point, the decision owner chooses whether to expand, narrow, repeat a specific check, wait for a dependency, or stop the initiative. Confirming the original plan is also valid. Carry the completed analysis, conditions, and open questions into the work plan; an exhausted budget and participants' silence do not authorize a launch.
+
+When closing the pilot question, retain its material assumptions and agree who will observe the delivered result and when to revisit it. For the assistant, that means checking whether continued use actually relates to operator effort, customer service, and consequential errors. Use existing telemetry and operating reviews where they fit; a convenient local signal is not a substitute for the intended effect.
+
+An ongoing product team also maintains regular contact with customers to learn about their needs and unexpected opportunities, beyond monitoring this feature or waiting for a predefined trigger. Torres's model calls for at least weekly customer touchpoints by the team building the product; that cadence is not prescribed here for every technical check or finite engagement (see the [source and adaptation note](../README.md#foundations-and-development)).
 
 ## When initiatives compete for the same specialists
 
@@ -57,7 +61,7 @@ Several initiatives may need the same domain expert, architect, data specialist,
 
 If a persistent queue develops, you can use [the conditional DBR adaptation for flow control](outsourcing-presales.md#flow-control): keep a small queue of questions with the necessary inputs and release work as the shared specialist becomes available. A single initiative without this competition does not need a separate mechanism.
 
-After the decision, it is useful to compare expected and actual costs, new information, and effects on the current product. A recurring error provides grounds to refine a playbook rule; a one-off difficulty does not require a new mandatory stage.
+Separately from learning whether a product decision produced value, examine how discovery worked: which assumption was missed, which check changed the choice, and what delayed understanding. Use recurring failures to refine a playbook rule; a minor question need not trigger a separate retrospective or a new mandatory stage.
 
 ---
 
