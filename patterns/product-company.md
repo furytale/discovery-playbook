@@ -1,4 +1,4 @@
-# Product company: a new direction without stopping the current product
+# Product company: a new direction without putting the existing product on hold
 
 [Back to the Playbook](../README.md) · [Core](../core.md)
 

@@ -6,7 +6,7 @@ Development is already scheduled, but the team still does not know whether an in
 
 This playbook proposes working through such situations around a specific decision, rather than a mandatory set of meetings and documents.
 
-> **Discovery helps establish a sufficient basis for the next material action—or a reasoned decision not to take it.**
+> **Discovery helps establish a sufficient basis for the next consequential action—or a reasoned decision not to take it.**
 
 The outcome may be a first use case, a boundary for reuse, a pilot decision, clarified scope, or a decision to stop pursuing a direction. Documents support that choice but do not replace it. A check that confirms the original plan is also a useful result.
 

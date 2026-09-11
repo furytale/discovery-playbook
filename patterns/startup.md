@@ -44,7 +44,7 @@ Take one real end-to-end scenario: a user action, data processing, an external d
 
 ### Check what could invalidate an expensive decision
 
-Along the chosen path, identify what works, what is assumed, and what is still missing. Prioritize checks of conditions that could change what you implement next: availability of the required operation, permissions, data quality, error handling, and the ability to retry safely. A technical test request answers a technical question; the value of the result needs to be checked with the user or process owner.
+Along the chosen path, identify what works, what is assumed, and what is still missing. Prioritize checks of conditions that could change what you implement next: availability of the required operation, permissions, data quality, error handling, and the ability to retry safely. A technical probe answers a technical question; the value of the result needs to be checked with the user or process owner.
 
 Before expanding a shared platform mechanism, identify its first consumer, the required scope, and who will maintain the solution. Tie further study of the system to upcoming tasks.
 
