@@ -1,21 +1,21 @@
-# Core — от вопроса к следующему действию
+# Core — from a question to the next action
 
-[К началу Playbook](README.md)
+[Back to the Playbook](README.md)
 
-> **Discovery помогает получить достаточное основание для следующего существенного действия — или обоснованно отказаться от него.**
+> **Discovery helps establish a sufficient basis for the next material action—or a reasoned decision not to take it.**
 
-Ядро состоит из пяти пунктов: **decision, uncertainty, evidence, sufficient depth, decision / stop**.
+The Core has five elements: **decision, uncertainty, evidence, sufficient depth, decision / stop**.
 
-Core — общая дисциплина рассуждения для всех трёх контекстов плейбука.
+The Core is a shared reasoning discipline for all three contexts in the playbook.
 
-Для небольшой обратимой правки может хватить 20-минутного разговора: выбрать изменение, свериться с имеющимися данными, определить проверку результата и условие отката. Для крупного решения тот же Core помогает выделить вопросы, требующие отдельного исследования. Ни один из этих масштабов не является нормой для остальных задач.
+A small, reversible change may need only a 20-minute conversation: choose the change, check it against existing data, and define how to check the result and when to roll back. For a larger decision, the same Core helps identify questions that need a separate investigation. Neither scale is the default for other tasks.
 
-Первое **decision** означает «какой выбор готовим». Последнее **decision / stop** — «что выбрали и что теперь делаем».
+The first **decision** means “what choice are we preparing to make?” The final **decision / stop** means “what have we chosen, and what do we do now?”
 
-Ниже — предлагаемые правила и условные примеры, не описание конкретных клиентских проектов. Ядро не задаёт состав команды, число интервью, комплект документов или срок discovery.
+The rules and hypothetical examples below are proposals, not accounts of specific client projects. The Core does not prescribe team composition, interview counts, a document set, or the duration of discovery.
 
 <a id="core-decision-map"></a>
-## Карта следующего действия
+## Map of the next action
 
 ```mermaid
 ---
@@ -26,262 +26,262 @@ config:
     padding: 10
 ---
 flowchart TD
-    accTitle: Нужна ли следующая проверка
-    accDescr: При достаточных применимых основаниях вопрос сразу переходит владельцу решения. Иначе сначала задаются достаточный результат и предел затрат. Проверка возможна только если полезна и допустима в этом пределе; её результат возвращает к оценке выбора. Отсутствие полезной проверки допускает сужение, изменение, ожидание или отказ. Ожидающееся решение не разрешает зависимую работу.
-    Q["Ближайший выбор<br/>и неизвестное"] --> E{"Оснований<br/>хватает?"}
-    E -->|Да| O{"Владелец<br/>решил?"}
-    E -->|Нет| B["До проверки:<br/>результат и предел"]
-    B --> T{"Полезна<br/>и допустима?"}
-    T -->|Да| R["Ограниченная<br/>проверка"]
-    T -->|Нет| O
-    R -->|Пересмотр| Q
-    O -->|Да| A["Выбранное<br/>действие"]
-    O -->|Нет ответа| W["Решение<br/>ожидается"]
+    accTitle: Is another check needed?
+    accDescr: When applicable evidence is sufficient, the question goes straight to the decision owner. Otherwise, define a sufficient result and cost limits before checking. A check is possible only if it is useful and permitted within those limits; its result returns to a review of the decision. Without a useful check, narrowing, changing, waiting, or stopping remain options. A pending decision does not authorize dependent work.
+    Q["Next decision<br/>and unknowns"] --> E{"Enough<br/>evidence?"}
+    E -->|Yes| O{"Has the owner<br/>decided?"}
+    E -->|No| B["Before checking:<br/>result and limits"]
+    B --> T{"Useful and<br/>permitted?"}
+    T -->|Yes| R["Bounded<br/>check"]
+    T -->|No| O
+    R -->|Review| Q
+    O -->|Yes| A["Chosen<br/>action"]
+    O -->|No reply| W["Decision<br/>pending"]
 ```
 
-Это карта выбора следующего действия, а не обязательные стадии discovery. Новые сведения могут изменить исходный вопрос; ограничивается зависимая работа, а не автоматически весь проект. При пересмотре результат и его границы сопоставляют с выбором и пределом затрат. Возврат на проверку требует нового обоснования и доступного ресурса в пределах [достаточной глубины](#sufficient-depth); исчерпание бюджета не доказывает готовность. Достаточные актуальные основания позволяют обойти новую исследовательскую работу. Владелец может продолжить, сузить, изменить, отложить или остановить действие, в том числе без закрытия всех вопросов. Завершённый анализ при ожидающемся решении не разрешает зависимую реализацию — см. [Decision / stop](#decision-stop).
+This is a map for choosing the next action, not mandatory discovery stages. New information may change the original question; the restriction applies to dependent work, not automatically to the whole project. At review, compare the result and its limits with the decision and cost limit. Another check requires a new justification and available resources under the [Sufficient depth](#sufficient-depth) rule; exhausting the budget does not establish readiness. Sufficient current evidence allows you to skip new research. The owner may continue, narrow, change, defer, or stop the action, including before every question is closed. Completed analysis with a decision still pending does not authorize dependent implementation—see [Decision / stop](#decision-stop).
 
 <a id="decision"></a>
-## 1. Decision — определить, какой выбор предстоит сделать
+## 1. Decision — define the choice to be made
 
-### Зачем нужен
+### Purpose
 
-Чтобы у исследования было конкретное назначение. «Разобраться в продукте», «подготовить BRD» и «проанализировать архитектуру» описывают занятия или материалы. Они ещё не объясняют, какой выбор станет возможен благодаря работе.
+Give the investigation a specific purpose. “Understand the product,” “prepare a BRD,” and “analyze the architecture” describe activities or materials. They do not yet explain what choice the work will make possible.
 
-Начальный вопрос не требует заранее знать правильный ответ. Он задаёт проблему, ради которой стоит искать ответ. На ранней стадии выбором может быть даже «какую проблему исследовать первой», а не «какую систему строить».
+The initial question does not require knowing the right answer in advance. It defines the problem worth seeking an answer to. At an early stage, the choice may even be “which problem should we investigate first?” rather than “which system should we build?”
 
-### Какую проблему предотвращает
+### Failure it prevents
 
-Команда начинает собирать материалы, но участники ожидают разного результата: один — оценку разработки, другой — проверку технической идеи, третий — поиск первого применения продукта. Все заняты, однако работа не сходится в общее решение.
+The team starts collecting material, but people expect different results: one wants a development estimate, another a check of a technical idea, and a third a search for the product's first use case. Everyone is busy, yet the work does not converge on a shared decision.
 
-Эти задачи можно сочетать. Но нельзя незаметно заменить одну другой: архитектурная проработка, проверка продуктовой гипотезы и описание первого объёма готовят разные решения.
+These tasks can be combined. But one must not silently replace another: architectural analysis, testing a product hypothesis, and defining the initial scope prepare different decisions.
 
-### Минимальное правило
+### Minimum rule
 
-> **До существенных затрат назвать ближайший выбор, его связь с результатом для бизнеса или пользователя и человека, который вправе этот выбор сделать.**
+> **Before incurring material costs, name the next decision, its connection to a business or user outcome, and the person authorized to make it.**
 
-Например, вместо «провести аудит платформы»:
+For example, instead of “audit the platform”:
 
-> Решаем, какую часть существующей системы можно использовать для первого клиентского сценария и что придётся создавать заново.
+> Decide which parts of the existing system can support the first client use case and what must be built from scratch.
 
-Здесь ещё не выбран ответ, но уже понятно назначение проверки.
+The answer has not been chosen yet, but the purpose of the check is clear.
 
-Необязательно сразу перечислять все варианты. Достаточно обозначить, какое действие пока нельзя обосновать, почему оно важно сейчас и когда ответ понадобится. Формулировка «доказать, что наш вариант лучший» подменяет исследование защитой уже выбранного решения.
+You do not have to list every option immediately. It is enough to identify which action cannot yet be justified, why it matters now, and when an answer is needed. “Prove that our option is best” replaces investigation with a defense of a decision already made.
 
-### Когда достаточно и можно двигаться дальше
+### When it is enough
 
-Участники одинаково понимают, какой выбор готовят, зачем он нужен и кто воспользуется результатом. Полное видение продукта на несколько лет для этого не требуется.
+Participants share an understanding of the decision being prepared, why it is needed, and who will use the result. A complete product vision for the next several years is not required.
 
-Если конечное применение ещё неясно, можно согласовать ограниченный поиск первого применения. Это самостоятельная задача с собственным пределом, а не основание сразу проектировать всё возможное.
+If the eventual use case is still unclear, you can agree on a bounded search for an initial use case. That is a separate task with its own limits, not a reason to design everything imaginable at once.
 
-**Проверочный вопрос:** «Что мы сможем решить или сделать после этой работы, чего сейчас обоснованно сделать не можем?»
+**Checking question:** “What will we be able to decide or do after this work that we cannot currently justify?”
 
 <a id="uncertainty"></a>
-## 2. Uncertainty — выделить неизвестное, которое действительно влияет на выбор
+## 2. Uncertainty — identify unknowns that actually affect the decision
 
-### Зачем нужен
+### Purpose
 
-Чтобы отделить существенное неизвестное от общего недостатка знаний о продукте. Архитектору не требуется узнать всё о компании, прежде чем проверить одну интеграцию. Но условия, способные отменить выбранный путь или существенно изменить его цену, нельзя оставлять незаметными.
+Separate material uncertainty from a general lack of knowledge about the product. An architect does not need to learn everything about the company before checking one integration. But conditions that could invalidate the chosen approach or materially change its cost must not remain hidden.
 
-### Какую проблему предотвращает
+### Failure it prevents
 
-Предположение о готовности компонента, поведении API или наличии ресурсов становится основанием для архитектуры и оценки. Его неопределённость теряется при передаче, а выяснение переносится в реализацию.
+An assumption about a component's readiness, API behavior, or resource availability becomes the basis for architecture and an estimate. Its uncertainty is lost during handoff, and investigation is deferred to implementation.
 
-Наличие репозитория, например, само по себе не отвечает на вопрос о пригодности решения для нового сценария. Не обязательно проверять всё заранее; важно выделить предпосылки, от которых зависит ближайшее действие.
+For example, a repository's existence does not by itself establish whether a solution suits a new use case. Not everything needs to be checked in advance; identify the assumptions the next action depends on.
 
-### Минимальное правило
+### Minimum rule
 
-> **Выделять прежде всего неизвестные, которые могут изменить ближайшее решение, и объяснять последствия неверного предположения.**
+> **Prioritize unknowns that could change the next decision, and explain the consequences of a wrong assumption.**
 
-Например:
+For example:
 
-> Планируем автоматическую настройку CRM, но ещё не подтвердили, что доступные права и API позволяют выполнить необходимые операции. Если нет — изменятся сценарий и объём.
+> We plan to automate CRM setup, but have not yet confirmed that the available permissions and APIs allow the required operations. If they do not, the use case and scope will change.
 
-Это предметнее, чем «есть интеграционные риски»: видно, что именно неизвестно и почему это имеет значение.
+This is more specific than “there are integration risks”: it shows exactly what is unknown and why it matters.
 
-Приоритет определяется последствиями ошибки, возможностью отменить действие и стоимостью проверки. Вероятность учитывают, когда для неё есть основания; проценты и баллы ради оформления не нужны.
+Priority depends on the consequences of an error, whether the action can be reversed, and the cost of checking. Consider probability when there is a basis for it; percentages and scores are not needed just for presentation.
 
-Важно различать **неизвестный факт** и **непринятый выбор**. «Поддерживается ли операция?» требует проверки. «Включаем ли Web в первый этап?» может требовать решения о продукте и бюджете. Дополнительное исследование не заменяет полномочия выбрать объём.
+Distinguish an **unknown fact** from a **decision not yet made**. “Is the operation supported?” calls for a check. “Do we include Web in the first phase?” may call for a product and budget decision. More research does not replace the authority to choose scope.
 
-**Принятое допущение** — пока не подтверждённое условие, на которое решили опереться в заданных границах. **Известный риск** — возможное неблагоприятное событие с понятными последствиями; его можно учитывать, даже когда исходные факты известны. Ни то ни другое не следует помечать как закрытый вопрос только потому, что его обсудили.
+An **accepted assumption** is an unconfirmed condition that someone has chosen to rely on within defined limits. A **known risk** is a possible adverse event with understood consequences; it can be considered even when the underlying facts are known. Neither should be marked as closed merely because it was discussed.
 
-Например, зависимость от одного специалиста может быть установлена, но дополнительное исследование само по себе её не устранит. Для существенного риска обозначьте, что может произойти, кого или что это затронет, какая реакция нужна и кто организует следующий шаг.
+For example, dependence on a single specialist may be established, but further research will not by itself remove it. For a material risk, identify what could happen, whom or what it would affect, what response is needed, and who will organize the next step.
 
-### Когда достаточно и можно двигаться дальше
+### When it is enough
 
-Понятно, какие вопросы проверяем сейчас, какие передаём владельцу решения, а какие не влияют на ближайший шаг и остаются за его границей. Для существенного пробела понятен путь получения ответа или человек, который поможет его организовать.
+It is clear which questions are being checked now, which go to the decision owner, and which do not affect the next step and remain outside its scope. For a material gap, there is a clear way to get an answer or a person who can help arrange it.
 
-Не нужен полный каталог рисков компании: для небольшой работы достаточно удерживать существенные риски в существующей задаче; отдельный реестр остаётся опцией. Обнаружение риска не делает человека автоматически ответственным за все его последствия.
+A complete catalog of company risks is not required: for a small piece of work, keeping material risks in the existing task is enough; a separate register remains optional. Finding a risk does not automatically make someone responsible for all its consequences.
 
-Если уже установлено обстоятельство, достаточное для отказа от текущего варианта, необязательно продолжать остальные запланированные проверки.
+If an established condition is sufficient to reject the current option, the remaining planned checks do not necessarily need to continue.
 
-**Проверочный вопрос:** «Как изменится наш план, если это предположение окажется неверным?»
+**Checking question:** “How would our plan change if this assumption were wrong?”
 
 <a id="evidence"></a>
-## 3. Evidence — получить основание, подходящее именно к этому вопросу
+## 3. Evidence — establish a basis that fits this question
 
-### Зачем нужен
+### Purpose
 
-Чтобы качество вывода определялось тем, что действительно удалось установить, а не объёмом отчёта или убедительностью объяснения.
+Make the quality of a finding depend on what was actually established, rather than the length of a report or how persuasive an explanation sounds.
 
-Здесь evidence означает проверяемое основание: наблюдение, документ, данные, результат эксперимента, подтверждение уполномоченного участника — в зависимости от вопроса. Это не требование во всех случаях самостоятельно повторять проверку первичного источника.
+Here, evidence means a basis that can be checked: an observation, document, data, experimental result, or confirmation by an authorized participant, depending on the question. It does not require personally repeating a check of the primary source in every case.
 
-### Какую проблему предотвращает
+### Failure it prevents
 
-Один вид сведений выдаётся за ответ на другой вопрос. Общая потребность пользователей принимается за согласие на конкретный способ её удовлетворить. Работоспособность интеграции — за востребованность продукта. Согласование документа — за подтверждение всех технических предположений внутри него.
+One kind of information is presented as the answer to a different question. A general user need is treated as agreement with a particular way of meeting it. A working integration is treated as product demand. Agreement on a document is treated as confirmation of every technical assumption in it.
 
-Например, «пользователям важна безопасность» и «пользователи готовы проходить этот дополнительный шаг регистрации» — два разных утверждения. Проверка первого не закрывает второе.
+For example, “users care about security” and “users are willing to complete this extra registration step” are different claims. Checking the first does not settle the second.
 
-### Минимальное правило
+### Minimum rule
 
-> **Для существенного утверждения использовать подходящий способ проверки и сохранять границы полученного вывода.**
+> **Use an appropriate way to check a material claim, and preserve the limits of the resulting finding.**
 
-**Состав участников определяется вопросом, способом проверки и нужными компетенциями.** Различайте того, кто знает исследуемую ситуацию, того, кто умеет провести и интерпретировать проверку, и того, кто вправе выбрать действие. Это не обязательно три человека. Функции «ведёт / проверяет / решает» не заменяют предметной компетенции.
+**Participation depends on the question, the way it will be checked, and the skills required.** Distinguish the person who knows the situation, the person who can carry out and interpret the check, and the person authorized to choose an action. These need not be three people. The functions of leading, reviewing, and deciding do not replace subject-matter competence.
 
 <a id="evidence-competence-map"></a>
-**Как получить основание и кого подключить**
+**How to obtain evidence and whom to involve**
 
-| Вопрос | Как получить основание | Нужная компетенция / участник | Чего это не подтверждает |
+| Question | How to obtain evidence | Required competence / participant | What this does not establish |
 |---|---|---|---|
-| Как проходит операция между подразделениями? | Конкретный случай с исполнителем, записи и данные процесса | Знающий процесс человек; BA для разбора | Полноту процесса за пределами разобранного случая |
-| Работает ли техническая операция в нужных условиях? | Применимая документация; при пробеле — разрешённая проба | Инженер / архитектор, знакомый с системой | Другие окружения и масштабы; рыночную ценность |
-| Приемлем ли новый пользовательский шаг? | Проверка конкретного сценария с целевой аудиторией | Навыки пользовательского исследования и участники аудитории | Устойчивый спрос по одному проявлению интереса |
-| Есть ли первое применение и спрос? | Реальные случаи и проверка предложения с аудиторией | Продуктовый аналитик / продуктолог с навыками исследования рынка и пользователей | Спрос за пределами проверенной аудитории |
-| Выполнимы ли существенные условия данных, безопасности, эксплуатации? | Применимые требования, данные и разрешённая проверка | Соответствующий профильный специалист | Право пропустить обязательное условие |
-| Входит ли возможность в этап и бюджет? | Явный выбор и согласованный объём | Владелец бюджета и соответствующих обязательств | Истинность технического или рыночного утверждения |
+| How is an operation carried out across departments? | A concrete case with the person doing the work, records, and process data | Someone who knows the process; a BA to analyze it | The full process beyond the case examined |
+| Does a technical operation work under the required conditions? | Applicable documentation; a permitted test if a gap remains | An engineer / architect familiar with the system | Other environments and scales; market value |
+| Is a new user step acceptable? | Test a specific flow with the target audience | User research skills and members of the audience | Sustained demand from a single expression of interest |
+| Is there an initial use case and demand? | Real cases and a test of the offer with the audience | A product analyst or product specialist with market and user research skills | Demand beyond the audience tested |
+| Can material data, security, and operational conditions be met? | Applicable requirements, data, and a permitted check | The relevant specialist | Permission to skip a mandatory condition |
+| Is a capability included in the phase and budget? | An explicit decision and agreed scope | The owner of the budget and relevant commitments | The truth of a technical or market claim |
 
-Таблица связывает вопрос, основание и компетенцию; она не задаёт штатное расписание. Эксперт по методу не заменяет аудиторию или выполняющего работу человека как источник сведений. Уже имеющихся актуальных и применимых оснований может быть достаточно; одна проверка не подтверждает автоматически другие условия.
+The table connects a question, evidence, and competence; it is not a staffing plan. An expert in the method does not replace the audience or the person doing the work as a source of information. Existing current and applicable evidence may be enough; one check does not automatically establish what holds under other conditions.
 
-Должность не гарантирует компетенцию: опыт продуктовой телеметрии не равен опыту исследования нового рынка. BA или архитектор могут обладать нужными навыками; экспертное мнение всё равно не заменяет свидетельств аудитории о её поведении.
+A job title does not guarantee competence: experience with product telemetry is not the same as experience researching a new market. A BA or architect may have the required skills; expert opinion still does not replace evidence from the audience about its behavior.
 
-Практический ориентир — небольшой постоянный состав с совмещением компетенций и подключением профильного человека на нужную проверку. Учтите доступность и время на осмысление результата. Не всем нужны все встречи; одного человека с нужными навыками иногда достаточно. Если компетенции нет, сузьте вывод, привлеките помощь или отложите зависимую часть. Дополнительный ИИ-текст этот пробел не закрывает.
+A practical default is a small ongoing team whose members can combine skills, with a specialist involved for the check that needs them. Account for availability and time to interpret the result. Not everyone needs every meeting; one person with the right skills is sometimes enough. If a skill is missing, narrow the finding, bring in help, or defer the dependent work. More AI-generated text does not fill that gap.
 
-Нужно различать наблюдение, интерпретацию и принятое допущение. Рекомендация предлагает действие на их основании; решение фиксирует выбор уполномоченного участника.
+Distinguish observation, interpretation, and an accepted assumption. A recommendation proposes an action on that basis; a decision records the choice of an authorized participant.
 
-Вес источника зависит от вопроса, близости к событию, охвата и подтверждений. Рассказ очевидца — первичное свидетельство о том, что он делал и наблюдал. Документ позволяет проверить его текст и версию, но наличие требования не доказывает, что его передали, одинаково поняли или согласовали. Ни личный рассказ, ни производная ретроспектива сами по себе не доказывают мотивы других людей, универсальные причины или эффект правил. Расхождение проверяют по времени, предмету и точке наблюдения; неразрешённое сохраняют. Повтор рассказа в нескольких AI-синтезах не создаёт независимых подтверждений.
+The weight of a source depends on the question, proximity to the event, coverage, and corroboration. A firsthand account is primary evidence of what the person did and observed. A document lets you check its text and version, but the existence of a requirement does not establish that it was communicated, understood in the same way, or agreed. Neither a personal account nor a retrospective compiled from other material establishes, by itself, other people's motives, universal causes, or the effect of the rules. Check discrepancies against timing, subject matter, and the observer's perspective; preserve unresolved differences. Repeating an account in several AI syntheses does not create independent corroboration.
 
-### Когда достаточно и можно двигаться дальше
+### When it is enough
 
-Можно объяснить, что установлено, на каком основании, к каким условиям это относится и что осталось непроверенным. Полученное позволяет сравнить варианты, исключить один из них либо честно признать, что выбранная проверка ответа не дала.
+You can explain what has been established, on what basis, under which conditions, and what remains unchecked. The result lets you compare options, rule one out, or acknowledge that the chosen check did not answer the question.
 
-**«Не подтвердили» не означает автоматически «опровергли».** Но и отсутствие опровержения не делает гипотезу подтверждённой.
+**“Not confirmed” does not automatically mean “disproved.”** Nor does the absence of disproof confirm a hypothesis.
 
-**Проверочный вопрос:** «Это основание отвечает на наш вопрос — или только выглядит близким к нему?»
+**Checking question:** “Does this evidence answer our question, or does it merely look related?”
 
 <a id="sufficient-depth"></a>
-## 4. Sufficient depth — ограничить проверку тем, что необходимо решению
+## 4. Sufficient depth — limit the check to what the decision needs
 
-### Зачем нужен
+### Purpose
 
-Чтобы не начать действовать раньше достаточной проверки и не продолжать исследование после того, как его дополнительная ценность перестала оправдывать затраты.
+Avoid acting before enough has been checked, or continuing research after its additional value no longer justifies the cost.
 
-Достаточная глубина относится к конкретному следующему действию. Оснований для ограниченного пилота может хватать, а для массового запуска — ещё нет. Выбор пилота не означает подтверждения всего будущего продукта.
+Sufficient depth relates to a specific next action. There may be enough evidence for a limited pilot but not yet for a broad rollout. Choosing a pilot does not confirm the entire future product.
 
-### Какую проблему предотвращает
+### Failure it prevents
 
-Две противоположные ошибки:
+Two opposite mistakes:
 
-> Бюджет закончился — значит всё проверено.
+> The budget is exhausted, so everything has been checked.
 
-> Остались вопросы — значит продолжаем без предела.
+> Questions remain, so we continue without a limit.
 
-Одинаковый лимит времени не даёт основания обещать одинаковый результат для разных задач. А наличие новых вопросов само по себе не оправдывает продолжение расходов.
+The same time allowance does not justify promising the same result for different tasks. New questions do not by themselves justify continued spending.
 
-### Минимальное правило
+### Minimum rule
 
-> **До существенной проверки назвать ближайший выбор, достаточное для него основание, исключённые вопросы, предел затрат и условие пересмотра.**
+> **Before a material check, name the next decision, the basis sufficient for it, excluded questions, the cost limit, and the condition for review.**
 
-Глубину выбирают с учётом тяжести последствий, охвата воздействия, обратимости действия и доступной цены проверки. Предел затрат учитывает трудозатраты, календарное ожидание и влияние задержки на следующий шаг. Это разные вещи: ожидание доступа не должно выглядеть как активная аналитическая работа, но оно всё равно может менять сроки и выбор.
+Choose depth based on the severity and reach of the consequences, whether the action can be reversed, and the affordable cost of checking. The cost limit accounts for effort, elapsed waiting time, and the effect of delay on the next step. These are different things: waiting for access must not look like active analytical work, but it can still change the schedule and the decision.
 
-Риски будущего решения — например, непригодность интеграции или неприемлемость нового шага для пользователей — отличаются от рисков проведения discovery. Основания могут устареть к моменту решения; задержки и перерасход самого исследования также требуют реакции.
+Risks of the future decision—such as an unsuitable integration or a new step users find unacceptable—differ from the risks of running discovery. Evidence may become outdated before the decision; delays and cost overruns in the investigation itself also need a response.
 
-После появления новых сведений критерий можно пересмотреть — явно, с объяснением, а не незаметно передвигать его до получения желаемого ответа.
+When new information arrives, the criterion can be revised explicitly, with an explanation, rather than silently moved until the desired answer appears.
 
-Перед дополнительной работой полезно спросить: «Какой возможный результат этой проверки изменит наш выбор?» Если такой результат есть, но используемый метод его не даст, меняется метод. Если ответ не влияет на действие, исследование откладывается.
+Before doing more work, it helps to ask: “What possible result of this check would change our decision?” If such a result is possible but the method cannot produce it, change the method. If the answer would not affect the action, defer the research.
 
 <a id="risk-response-map"></a>
-**Как выбрать реакцию на риск**
+**How to choose a response to risk**
 
-| Ситуация | Возможная реакция | Граница следующего действия |
+| Situation | Possible response | Boundary for the next action |
 |---|---|---|
-| Существенный факт можно проверить допустимым способом в оправданном пределе | Ограниченная проверка | Достаточный результат, затраты и пересмотр определены до начала |
-| Исследование не устранит опасность или неоправданно дорого | Изменить / ограничить действие, организовать техническую защиту либо отказаться | Дополнительный анализ не обязателен ради самого продолжения работы |
-| Не выполнено обязательное условие безопасного действия | Ограничить или приостановить зависимую часть | Принятие риска не отменяет условие; допустимая независимая работа продолжается |
-| Discovery задерживается из-за доступа, участника, правок, перерасхода или ожидаемого решения | Назначить ответственного за следующий шаг; пересмотреть объём, метод или срок | Ожидание не считается выполненной проверкой; молчание не разрешает зависимое действие |
-| Достаточные актуальные основания для допустимого действия уже есть | Выбрать действие без повторного исследования | Обычные проверки результата и условия пересмотра сохраняются |
+| A material fact can be checked by a permitted method within a justified limit | A bounded check | Define a sufficient result, costs, and review conditions before starting |
+| Research will not remove the danger or is unjustifiably expensive | Change / limit the action, arrange a technical safeguard, or decline to act | More analysis is not mandatory just to keep work going |
+| A mandatory condition for safe action has not been met | Limit or pause the dependent part | Accepting risk does not waive the condition; permitted independent work continues |
+| Discovery is delayed by access, a participant, revisions, overruns, or a pending decision | Assign responsibility for the next step; revisit scope, method, or schedule | Waiting does not count as a completed check; silence does not authorize dependent action |
+| Sufficient current evidence for a permitted action already exists | Choose an action without repeating the research | Normal checks of the result and review conditions still apply |
 
-Это варианты реакции, не алгоритм с единственным ответом по строке. Риск возможен и при известных фактах; высокая тяжесть последствий не всегда требует больше исследования. Для остающегося существенного риска явно определяют ответственного за согласованное действие и условие пересмотра; обнаруживший риск не получает все последствия автоматически. Выбор остаётся в пределах полномочий, как описано в [Decision / stop](#decision-stop).
+These are possible responses, not an algorithm with one answer per row. Risk can exist even when the facts are known; severe consequences do not always call for more research. For a remaining material risk, explicitly identify who is responsible for the agreed action and when to review it; the person who found the risk does not automatically take on all its consequences. Decisions remain within the person's authority, as described in [Decision / stop](#decision-stop).
 
-### Когда достаточно и можно двигаться дальше
+### When it is enough
 
-Есть основания принять ограниченное решение либо достаточно ясно, почему дальнейшую проверку сейчас не стоит или нельзя продолжать. Остаточные неизвестные обозначены и не выдаются за закрытые.
+There is a basis for a bounded decision, or it is sufficiently clear why further checking is not worthwhile or possible now. Remaining unknowns are identified rather than presented as closed.
 
-Исчерпание бюджета — повод выбрать следующий шаг: сузить задачу, согласовать новую проверку, дождаться внешнего условия или прекратить направление. Это не доказательство готовности и не автоматическое право продолжать расход.
+Exhausting the budget is a reason to choose the next step: narrow the task, agree on another check, wait for an external condition, or stop pursuing the direction. It is not evidence of readiness or automatic permission to keep spending.
 
-Минимальность не разрешает обходить обязательные требования безопасности и соблюдения применимых норм. Если их выполнение проверить нельзя, ограничивается или откладывается зависимое действие; независимую работу останавливать необязательно.
+Keeping discovery minimal does not permit bypassing mandatory safety requirements or compliance with applicable rules. If compliance cannot be checked, limit or defer the dependent action; independent work need not stop.
 
-**Проверочный вопрос:** «Чего именно не хватает для следующего шага — и стоит ли получение этого ответа дополнительных затрат и ожидания?»
+**Checking question:** “What exactly is missing for the next step, and is getting that answer worth the additional cost and wait?”
 
 <a id="decision-stop"></a>
-## 5. Decision / stop — завершить вопрос явным следующим действием
+## 5. Decision / stop — close the question with an explicit next action
 
-### Зачем нужен
+### Purpose
 
-Чтобы результат выяснения изменил или подтвердил реальные действия команды, а не остался только в материалах исследователя.
+Ensure that the investigation changes or confirms the team's actual actions, rather than remaining only in the researcher's materials.
 
-Это не обязанность любой ценой получить согласие на разработку. Обоснованный отказ, более узкий сценарий или явно обозначенное отсутствие решения — допустимые результаты рассмотрения.
+This is not an obligation to obtain approval for development at any cost. A reasoned decision not to proceed, a narrower use case, or an explicitly pending decision are valid outcomes.
 
-### Какую проблему предотвращает
+### Failure it prevents
 
-Вывод известен автору, но BRD, макеты, архитектура и оценка продолжают описывать разные варианты. Либо анализ завершён, однако никто не принял решения, а молчание воспринимается как разрешение продолжать.
+The author knows the finding, but the BRD, mockups, architecture, and estimate still describe different options. Or the analysis is complete, yet nobody has decided, and silence is treated as permission to continue.
 
-«Документ готов» ещё не отвечает на вопрос, какое действие теперь согласовано и какие условия сохраняются.
+“The document is ready” does not yet explain which action is now agreed or which conditions still apply.
 
-### Минимальное правило
+### Minimum rule
 
-> **Завершать исследуемый вопрос явным исходом: что делаем дальше, на каком основании, в каких границах и кто принимает этот выбор.**
+> **Close the question under investigation with an explicit outcome: what happens next, on what basis, within what boundaries, and who makes that choice.**
 
-Исходом может быть продолжение с явно обозначенным остаточным риском в пределах полномочий, смена или ограничение действия, организация защиты, ещё одна обоснованная ограниченная проверка, ожидание внешнего условия либо отказ. Это варианты решения, а не набор обязательных статусов для информационной системы.
+The outcome may be to continue with explicit residual risk within the decision owner's authority, change or limit the action, arrange safeguards, run another justified bounded check, wait for an external condition, or decline to proceed. These are decision options, not mandatory statuses for an information system.
 
-Согласие на риск не превращает предположение в факт и не отменяет обязательных условий безопасного действия. Для остающегося существенного риска нужны понятные последствия, ответственный за согласованное действие и условие возврата к вопросу. Отсутствие ответа не является принятием риска.
+Accepting risk does not turn an assumption into a fact or waive mandatory conditions for safe action. For a remaining material risk, the consequences, the person responsible for the agreed action, and the condition for revisiting it must be clear. A lack of response does not mean that risk has been accepted.
 
-Существенное решение сохраняется там, откуда команда действительно берёт задания и обязательства. Если оно меняет объём или предпосылку оценки, должны измениться соответствующие материалы. Известное противоречие нельзя молча передавать дальше в требования, оценку или реализацию. При передаче сохраняются не только выбранный вариант, но и его ограничения. Копировать весь исследовательский архив не нужно.
+Record material decisions where the team actually looks for its tasks and commitments. If a decision changes scope or an assumption behind the estimate, the relevant materials must change. A known contradiction must not silently pass into requirements, an estimate, or implementation. Hand over the chosen option along with its limits. There is no need to copy the entire research archive.
 
-### Когда достаточно и можно двигаться дальше
+### When it is enough
 
-Люди, чья работа зависит от решения, понимают один и тот же ближайший шаг, его границы и оставшиеся условия. Понятно, кто отвечает за действие и что заставит вернуться к вопросу: например, иной сценарий использования, существенный перенос срока или результат следующей проверки.
+People whose work depends on the decision share an understanding of the next step, its boundaries, and the remaining conditions. It is clear who is responsible for the action and what would prompt a review: for example, a different use case, a material schedule change, or the result of the next check.
 
-**Анализ может быть завершён, пока управленческое решение ещё не принято.** Эти состояния нужно различать. Отсутствие ответа не означает согласие и не обязывает исполнителя бессрочно дописывать материалы. Если решение ожидается, обозначьте, от кого и к какому сроку нужен ответ, кто поднимет вопрос при задержке и какая зависимая работа пока не разрешена.
+**Analysis may be complete while a management decision is still pending.** Keep those states separate. A lack of response does not mean agreement, nor does it oblige the person doing the work to keep adding to the materials indefinitely. If a decision is pending, identify who needs to answer by when, who will escalate a delay, and which dependent work is not yet authorized.
 
-Если выбран исходный вариант, это тоже результат: discovery не обязано отменять первоначальный замысел, чтобы считаться полезным.
+Choosing the original option is also a result: discovery does not have to overturn the initial plan to be useful.
 
-**Проверочный вопрос:** «Что теперь происходит иначе — или на каком основании мы продолжаем прежний план?»
+**Checking question:** “What happens differently now—or on what basis do we continue with the original plan?”
 
 <a id="example"></a>
-## Один пример сквозь Core
+## One example through the Core
 
-**Условный пример, не реконструкция выполненного эксперимента.** Компания рассматривает автоматизацию передачи заявки между двумя системами.
+**A hypothetical example, not a reconstruction of an experiment that took place.** A company is considering automating the transfer of a request between two systems.
 
-**Decision.** Выбрать первый сценарий: автоматическая передача или ограниченный процесс с участием оператора.
+**Decision.** Choose the first use case: automatic transfer or a limited process involving an operator.
 
-**Uncertainty.** Не установлены доступность необходимых данных и возможность безопасно повторить операцию после сбоя. Вопросы будущей платформы за пределами этого сценария пока не влияют на выбор.
+**Uncertainty.** The availability of the required data and the ability to retry safely after a failure have not been established. Questions about a future platform beyond this use case do not yet affect the decision.
 
-**Evidence.** Разобрать реальную заявку с оператором, сопоставить поля и проверить существенные интеграционные условия разрешённым способом. Не подменять это общей демонстрацией CRM.
+**Evidence.** Walk through a real request with the operator, compare the fields, and check material integration conditions in a permitted way. Do not substitute a general CRM demonstration for this work.
 
-**Sufficient depth.** Проверять входы, итог операции и существенные исключения первого сценария. Не проектировать все будущие коннекторы. Заранее определить предел проверки и что потребуется для ограниченного пилота.
+**Sufficient depth.** Check the inputs, operation result, and material exceptions in the first use case. Do not design every future connector. Define the limits of the check and what a limited pilot will require in advance.
 
-**Decision / stop.** По результату выбрать допустимый вариант или остановить зависимую часть. Зафиксировать основания и границы. Этот пример не предполагает заранее, что проверка окажется успешной.
+**Decision / stop.** Use the result to choose a permitted option or stop the dependent part. Record the evidence and boundaries. This example does not assume in advance that the check will succeed.
 
-Если нужные сведения уже есть, актуальны и применимы, тот же выбор можно сделать без отдельного исследовательского проекта.
+If the necessary information already exists, is current, and applies to the situation, the same decision can be made without a separate research project.
 
-## Где заканчивается Core
+## Where the Core ends
 
-Ядро задаёт вопросы к работе. Оно не предписывает последовательность встреч, должности участников или универсальную длительность исследования. Различия применения раскрыты в трёх контекстных разделах: [стартап](patterns/startup.md), [продуктовая компания](patterns/product-company.md) и [аутсорс / пресейл](patterns/outsourcing-presales.md).
+The Core poses questions about the work. It does not prescribe a sequence of meetings, participants' job titles, or a universal research duration. Differences in application are covered in the three context patterns: [startup](patterns/startup.md), [product company](patterns/product-company.md), and [outsourcing / presales](patterns/outsourcing-presales.md).
 
-Если несколько инициатив конкурируют за общую ограниченную мощность, дополнительно пригодится [управление потоком с помощью DBR](patterns/outsourcing-presales.md#flow-control). Этот механизм не становится шестым шагом Core.
+When several initiatives compete for shared constrained capacity, [flow control with DBR](patterns/outsourcing-presales.md#flow-control) may also help. This mechanism does not become a sixth Core step.
 
-Результаты применения стоит возвращать в соответствующее правило как конкретные изменения. Не каждый небольшой вопрос требует отдельной ретроспективной встречи. Новое правило или инструмент добавляются ради определённой проблемы, а не ради расширения плейбука.
+Results from applying the playbook should feed back into the relevant rule as specific changes. Not every small question needs a separate retrospective meeting. Add a rule or tool to address a particular problem, not simply to expand the playbook.
 
 ---
 
-[К началу Playbook](README.md)
+[Back to the Playbook](README.md)

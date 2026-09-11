@@ -1,50 +1,50 @@
-# Аутсорс / пресейл — от запроса к обоснованным обязательствам
+# Outsourcing / presales — from a request to sound commitments
 
-[К началу Playbook](../README.md) · [Core](../core.md)
+[Back to the Playbook](../README.md) · [Core](../core.md)
 
-В пресейле discovery помогает определить, что команда может обоснованно предложить клиенту, на каких условиях и что ещё предстоит выяснить. Ближайший выбор может быть небольшим: брать ли запрос в работу, оценивать ли выбранный сценарий, проверять ли интеграцию или сначала уточнить задачу с клиентом.
+In presales, discovery helps establish what the team can reasonably offer the client, under what conditions, and what still needs to be clarified. The next decision may be small: whether to take on a request, estimate a particular scenario, check an integration, or first clarify the task with the client.
 
-Здесь [Core](../core.md) дополняется правилами передачи контекста, проверки результата и принятия обязательств. Для знакомого изменения иногда достаточно короткого разговора. Отдельный проект discovery нужен по содержанию неизвестного, а не по факту появления новой сделки.
+Here, [Core](../core.md) is supplemented by rules for handing over context, reviewing results, and making commitments. A brief conversation is sometimes enough for a familiar change. Whether a separate discovery project is needed depends on what is unknown, not simply on the arrival of a new deal.
 
-## Квалификация до назначения бюджета
+## Qualification before allocating a budget
 
-Запрос «заменить CRM» или «переписать на другой технологии» задаёт желаемое действие, но сам по себе не устанавливает причину проблемы. Если причина способна изменить объём или архитектуру, сначала получите достаточно фактов о реальной работе для ближайшего выбора: например, разберите, где теряется заявка и что этому предшествует. Предложенное клиентом решение сохраняется как вариант или обязательное ограничение; полная реализация не должна быть первым обязательным способом проверить его необходимость.
+A request to “replace the CRM” or “rewrite it using a different technology” specifies a desired action, but does not by itself establish the cause of the problem. If the cause could change the scope or architecture, first gather enough facts about how the work actually happens to inform the next decision: for example, examine where a request gets lost and what precedes that. The client's proposed solution remains an option or a binding constraint; full implementation must not be required as the first step in establishing whether it is needed.
 
-Если клиент уже провёл достаточную диагностику или обоснованно закрепил обязательное решение, проверьте применимость этих оснований и работайте в согласованных границах. Это не повод навязывать аудит всей компании или заново запускать discovery из-за несогласия архитектора.
+If the client has already diagnosed the problem sufficiently or has a sound basis for a binding decision, check that those grounds apply and work within the agreed boundaries. This is not a reason to impose a company-wide audit or restart discovery because the architect disagrees.
 
-До обещания одинакового пакета всем клиентам разберите, на что фактически уйдёт работа:
+Before promising every client the same package, establish what the work will actually involve:
 
-- **Знакомая адаптация:** есть применимый опыт; нужно проверить отличия, ограничения и объём изменений.
-- **Согласование людей и процесса:** сведения существуют, но разнесены между участниками, противоречат друг другу или требуют решения клиента.
-- **Исследование:** неизвестны проблема, первый сценарий или приемлемость решения для аудитории; нужны подходящие внешние свидетельства.
-- **Техническая неопределённость:** предстоит проверить существенную возможность, совместимость, доступность данных или пригодность существующего компонента.
-- **Сочетание этих работ:** например, интервью определяет сценарий, после чего техническая проба проверяет его реализуемость.
+- **Familiar adaptation:** relevant experience exists; differences, constraints, and the scope of changes need to be checked.
+- **Aligning people and process:** information exists, but is spread across participants, is contradictory, or requires a client decision.
+- **Research:** the problem, first scenario, or acceptability of the solution to the audience is unknown; appropriate external evidence is needed.
+- **Technical uncertainty:** a material capability, compatibility, data availability, or suitability of an existing component needs to be checked.
+- **A combination of these:** for example, an interview identifies the scenario, then a technical test checks its feasibility.
 
-Это ориентиры для разговора, а не обязательная классификация. Один запрос может менять характер по мере выяснения. До назначения бюджета полезно назвать ближайшее решение, ожидаемый способ проверки и существенные зависимости. Если пока непонятно даже это, сначала ограничьте усилие на уточнение запроса.
+These are prompts for a conversation, not a mandatory classification. The nature of a request may change as more becomes clear. Before allocating a budget, it helps to name the next decision, the intended check, and material dependencies. If even these are unclear, first limit the effort spent clarifying the request.
 
-Уточните и приобретаемый результат: описание объёма, архитектурная проработка, проверка гипотезы или их оговорённое сочетание. Готовая архитектура не доказывает спрос; согласованное описание продукта не подтверждает работоспособность интеграции. До обещания пакета определите нужные [компетенции](../core.md#evidence), доступность участников и стоимость их участия: поиск рыночного применения может потребовать иных навыков, чем техническая оценка.
+Also clarify what result is being purchased: a scope description, architectural work, a hypothesis test, or an agreed combination. A completed architecture does not prove demand; an agreed product description does not confirm that an integration works. Before promising a package, identify the required [competencies](../core.md#evidence), participants' availability, and the cost of their involvement: finding a market use case may require different skills from a technical estimate.
 
-## Передача из продаж
+## Sales handoff
 
-Команде нужен контекст, который влияет на решение и обещания. Его можно передать в существующей карточке сделки или коротком разговоре с записью существенного:
+The team needs the context that affects the decision and promises made. This can be passed on through an existing deal record or a brief conversation that records the material points:
 
-- почему клиент пришёл сейчас и какой результат ему нужен;
-- что уже обещано, а что обсуждается как возможность;
-- известные ограничения бюджета и сроков;
-- кто принимает решения со стороны клиента и исполнителя;
-- кто знает предметную область, какие люди, материалы и доступы доступны;
-- известные зависимости, противоречия и условия, на которых строилось предложение.
+- why the client came now and what result they need;
+- what has already been promised and what is being discussed as a possibility;
+- known budget and time constraints;
+- who makes decisions on the client and supplier sides;
+- who knows the domain, and which people, materials, and access are available;
+- known dependencies, contradictions, and conditions on which the proposal was based.
 
-Доступ ко всей истории продаж и не относящимся к задаче коммерческим данным не требуется. Неизвестное отмечают явно: отсутствие сведений о бюджете не означает его неограниченность, а обсуждение функции не означает обязательство её поставить.
+Access to the entire sales history and unrelated commercial data is not required. Mark unknowns explicitly: missing budget information does not mean the budget is unlimited, and discussing a feature does not mean committing to deliver it.
 
-Перед началом зависимой проверки убедитесь, что нужный специалист или доступ действительно доступны либо есть согласованный способ их получить. Если нет, зафиксируйте владельца зависимости и срок следующего решения. Безопасную независимую работу можно продолжать; ожидание ответа следует показывать отдельно от трудозатрат.
+Before starting a dependent check, make sure the necessary specialist or access is actually available, or that there is an agreed way to obtain it. Otherwise, record the dependency owner and when the next decision is due. Safe independent work can continue; waiting for an answer should be shown separately from effort spent.
 
-## Кто ведёт, кто проверяет, кто решает
+## Who leads, who reviews, who decides
 
-Подготовка вывода, содержательная проверка и выбор действия — разные функции. Ведущий discovery удерживает ближайший вопрос, организует получение свидетельств, собирает результат и поднимает препятствия. Распределение функций не заменяет предметную компетенцию для проверки.
+Preparing a conclusion, reviewing its substance, and choosing an action are different functions. The discovery lead keeps the next question in focus, organizes evidence gathering, brings the results together, and raises blockers. Assigning functions does not replace the subject expertise needed for the check.
 
 <a id="handoff-map"></a>
-### Что передавать между участниками
+### What to hand over between participants
 
 ```mermaid
 ---
@@ -55,134 +55,134 @@ config:
     padding: 10
 ---
 flowchart TD
-    accTitle: Передача вопроса, результата и решения
-    accDescr: Условный маршрут между функциями. Ведущий передаёт исполнителю вопрос, основания, предел и ожидаемый результат. Исполнитель возвращает установленное, ограничения, неизвестное и рекомендацию. Вывод с основанием поступает проверяющему; конкретный дефект возвращается исполнителю. Владелец выбирает действие либо решение ожидается. Ожидание не разрешает зависимую реализацию.
-    L[Ведущий] -->|Вопрос, основания,<br/>предел,<br/>ожидаемый результат| E[Исполнитель]
-    E -->|Установленное,<br/>ограничения,<br/>неизвестное,<br/>рекомендация| C[Ведущий]
-    C -->|Вывод с основанием| V[Проверяющий]
-    V -->|Дефект: расхождение,<br/>исправить /<br/>проверить| E
-    V -->|Вывод и основания,<br/>неизвестное, варианты,<br/>последствия,<br/>что и когда решить| O[Владелец решения]
-    O -->|Выбраны объём, условия,<br/>ответственный,<br/>повод пересмотра| N[Исполнитель<br/>следующего<br/>действия]
-    O -->|Выбора нет| W[Решение<br/>ожидается]
+    accTitle: Handing over the question, result, and decision
+    accDescr: An illustrative route between functions. The discovery lead passes the question, evidence, limit, and expected result to the person carrying out the check. That person returns what is established, limitations, unknowns, and a recommendation. The conclusion and its evidence go to the reviewer, and a specific defect returns to the person carrying out the check. The decision owner chooses an action, or the decision remains pending. Waiting does not authorize dependent implementation.
+    L[Discovery lead] -->|Question, evidence,<br/>limit,<br/>expected result| E[Person checking]
+    E -->|What is established,<br/>limitations,<br/>unknowns,<br/>recommendation| C[Discovery lead]
+    C -->|Conclusion with evidence| V[Reviewer]
+    V -->|Defect: discrepancy,<br/>correct /<br/>check| E
+    V -->|Conclusion and evidence,<br/>unknowns, options,<br/>consequences,<br/>what to decide and when| O[Decision owner]
+    O -->|Chosen scope, conditions,<br/>person responsible,<br/>review trigger| N[Person taking<br/>the next<br/>action]
+    O -->|No decision| W[Decision<br/>pending]
 ```
 
-Это условный маршрут для вопроса с несколькими участниками, а не четыре обязательных человека или отдела. Простой вопрос может его обойти. Следующим действием может быть и пауза или отказ; получателем будет тот, кому поручена следующая работа. Завершённый анализ не означает принятого решения, молчание не означает согласия. Пока решение ожидается, зависимая реализация не разрешена; допустимая независимая работа продолжается.
+This is an illustrative route for a question involving several participants, not four mandatory people or departments. A simple question can bypass it. The next action may also be a pause or a decision not to proceed; the recipient is whoever is assigned the next piece of work. Completed analysis does not mean a decision has been made, and silence does not mean agreement. While the decision is pending, dependent implementation is not authorized; permissible independent work continues.
 
-Получатель должен понимать порученную проверку. **Делегирование проверки не передаёт полномочий на бюджет, объём или принятие остаточного риска.** Исправление фактической ошибки требует подходящих свидетельств; управленческая эскалация — выбора действия. Руководитель может оплатить проверку или выбрать обходной вариант, но не объявить неподтверждённую возможность API существующей. Вывод с известным противоречием нельзя переносить в оценку как подтверждённый.
+The recipient must understand the assigned check. **Delegating a check does not transfer authority over budget, scope, or acceptance of residual risk.** Correcting a factual error requires appropriate evidence; management escalation requires a choice of action. A manager can fund a check or choose a workaround, but cannot declare that an unconfirmed API capability exists. A conclusion with a known contradiction must not be carried into the estimate as confirmed.
 
 <a id="responsibility-map"></a>
-### Кто готовит, проверяет и выбирает действие
+### Who prepares, reviews, and chooses the action
 
-| Вопрос или результат | Кто готовит | Кто проверяет по существу | Кто вправе выбрать следующее действие |
+| Question or result | Who prepares it | Who provides expert review | Who may choose the next action |
 |---|---|---|---|
-| Как проходит клиентский процесс | Исполнитель проверки с участниками процесса | Компетентный участник, знающий процесс | Владелец затронутого процесса и обязательств |
-| Технический вывод и вариант | Инженер или архитектор | Специалист нужной области | Уполномоченный владелец технического выбора |
-| Первый этап или изменение сроков | Ведущий с предметными специалистами | Участники, проверяющие объём и зависимости | Владельцы затронутых обязательств клиента и исполнителя |
-| Реакция на существенный риск | Обнаруживший риск с профильным участником | Специалист по соответствующему вопросу | Владелец решения в пределах своих полномочий |
-| Передача результата дальше | Ведущий с авторами результата | Компетентные участники: согласованность всего пакета | Владелец следующего действия в согласованных границах |
+| How the client's process works | The person carrying out the check, with process participants | A competent participant who knows the process | The owner of the affected process and commitments |
+| Technical conclusion and option | An engineer or architect | A specialist in the relevant area | The authorized owner of the technical decision |
+| First phase or a change in timing | The discovery lead with subject matter experts | Participants checking scope and dependencies | Owners of the affected client and supplier commitments |
+| Response to a material risk | The person who identified the risk, with a relevant specialist | A specialist in the relevant subject | The decision owner, within their authority |
+| Handing the result on | The discovery lead with those who produced the result | Competent participants checking consistency across the whole package | The owner of the next action, within agreed boundaries |
 
-Это пример назначения функций, не должностная инструкция. Функции могут совмещаться, если характер работы это допускает; отдельная независимая проверка нужна там, где она действительно требуется. Обнаруживший риск не становится владельцем всех последствий. У клиента и исполнителя могут быть разные владельцы обязательств: внутреннее решение одной стороны не меняет обязательства другой автоматически.
+This is an example of assigning functions, not a job description. Functions can be combined where the nature of the work allows it; a separate independent check is needed where it is actually required. Identifying a risk does not make that person responsible for all its consequences. The client and supplier may have different owners of commitments: one side's internal decision does not automatically change the other side's commitments.
 
-Техническое review, включая разрешённое автоматическое, не даёт права менять объём или бюджет. Перед отправкой клиенту полезно проверить пакет целиком: описание, схема, макет и оценка должны выражать одно решение с одинаковыми ограничениями.
+Technical review, including permitted automated review, does not confer authority to change scope or budget. Before sending the package to the client, it helps to check it as a whole: the description, diagram, mockup, and estimate must express the same decision with the same constraints.
 
-## Фиксированное усилие и граница результата
+## Fixed effort and the limits of the result
 
-**Лимит усилий — это сколько готовы потратить на вопрос. Гарантированный результат — отдельное обязательство.** Одно не следует из другого.
+**An effort limit is how much you are prepared to spend on a question. A guaranteed result is a separate commitment.** One does not follow from the other.
 
-Например, выделенные 20–25 часов могут быть границей доступной мощности, но не обещанием получить одинаково точную оценку по любому запросу. Это условный пример, не норматив. До начала нужно договориться, что проверяем, какой результат работы передаём и какого основания достаточно для следующего действия.
+For example, an allocation of 20–25 hours may define available capacity, but does not promise an equally precise estimate for every request. This is an illustrative example, not a standard. Before starting, agree on what will be checked, what result will be handed over, and what evidence will be enough for the next action.
 
-Если в этот предел входит техническая проба, можно согласовать отчёт о проверенных условиях и ограничениях. Нельзя из одного лимита вывести обещание, что нужная возможность обязательно подтвердится. Критерии приёмки оплаченной работы согласуют явно; получение следующей сделки или запуск продукта не подменяют их задним числом.
+If the limit includes a technical test, you can agree to provide a report on the conditions checked and their limitations. The limit alone cannot imply a promise that the required capability will be confirmed. Agree explicitly on acceptance criteria for paid work; winning the next deal or launching the product must not replace those criteria retrospectively.
 
-На границе усилия рассмотрите полученные основания. Возможны оценка в подтверждённом объёме, более узкий вариант, ещё одна ограниченная проверка, ожидание внешнего условия или остановка. Исчерпание бюджета не доказывает готовности. Оставшиеся вопросы также не дают автоматического права продолжать расходы: следующая проверка должна быть способна изменить решение.
+At the effort limit, review the evidence gathered. Options include an estimate for the confirmed scope, a narrower option, another bounded check, waiting for an external condition, or stopping. Exhausting the budget does not prove readiness. Remaining questions do not automatically authorize further spending either: the next check must be capable of changing the decision.
 
 <a id="ai-mediated-review"></a>
-## Когда клиент использует ИИ для ответов и приёмки
+## When the client uses AI for responses and acceptance
 
-ИИ может помогать готовить ответы и проверять результат. Проблема возникает, когда неясно, какие замечания клиент принимает как свою позицию, кто выбирает компромисс и когда работа заканчивается. Это возможно и с корпоративным заказчиком или внутренним стейкхолдером. По стилю письма нельзя устанавливать применение ИИ или некомпетентность автора; правила согласования полезны независимо от происхождения текста.
+AI can help prepare responses and review the result. Problems arise when it is unclear which comments the client adopts as their position, who decides on the tradeoff, and when the work ends. This can also happen with a corporate client or internal stakeholder. Writing style cannot establish AI use or the author's lack of competence; rules for reaching agreement are useful regardless of where the text came from.
 
-**До глубокой работы согласуйте приёмку.** Назовите ответственного за выбор клиента, состав результата, критерии, способ сбора замечаний и условия пересмотра предела итераций. Универсального числа раундов нет. Если клиент пока не может выбрать направление, ближайшим результатом может быть ограниченное прояснение вместо полной спецификации.
+**Agree on acceptance before substantial work.** Name the person responsible for the client's choice, the contents of the result, the criteria, how comments will be collected, and the conditions for revisiting iteration limits. There is no universal number of rounds. If the client cannot yet choose a direction, the next result may be a bounded clarification rather than a full specification.
 
-| Содержание замечания | Что проверить | Как продолжить |
+| Content of the comment | What to check | How to proceed |
 |---|---|---|
-| Факт или противоречие | Конкретный фрагмент и подходящее основание; для поведения — условия воспроизведения | Исправить подтверждённую собственную ошибку; непроверенное оставить открытым |
-| Уточнение понимания | Какой смысл или условие участники поняли по-разному | Уточнить формулировку и общее понимание; существенный выбор передать владельцу |
-| Новое требование или расширение | Отличие от согласованного объёма, предпосылки и влияние на срок и цену | Получить решение уполномоченного клиента; включение в оплаченный объём согласовать отдельно |
-| Редактура | Меняется только изложение или также смысл и обязательства | Исправить изложение; изменение смысла разобрать по соответствующей строке |
+| Fact or contradiction | The specific passage and appropriate evidence; for behavior, the conditions for reproducing it | Correct a confirmed error in your own work; leave unverified points open |
+| Clarification of understanding | Which meaning or condition participants understood differently | Clarify the wording and shared understanding; refer a material choice to its owner |
+| New requirement or expansion | The difference from agreed scope, assumptions, and impact on timing and price | Obtain a decision from the authorized client representative; agree separately on inclusion in paid scope |
+| Editing | Whether only the wording changes, or also meaning and commitments | Improve the wording; handle a change in meaning under the relevant row |
 
-Таблица относится к содержанию текста от человека или ИИ, а не к догадке об авторстве. Замечание может быть правильным, но до проверки это сообщение о возможной ошибке, а не доказанный дефект. Одна посылка может содержать и дефект, и новый объём — их разделяют. Воспроизводимую собственную ошибку нельзя отклонять только из-за лимита переписки: ошибку BRD исправляют в BRD. Для значимого замечания запросите относящийся к нему фрагмент, основание или ожидаемое изменение; специальный машинный формат от клиента не требуется.
+The table applies to the content of text from a person or AI, not to a guess about authorship. A comment may be correct, but until checked it reports a possible error, not a proven defect. A single message may contain both a defect and new scope; handle them separately. You must not dismiss a reproducible error in your own work just because the correspondence limit has been reached: fix a BRD error in the BRD. For a material comment, ask for the relevant passage, evidence, or expected change; no special machine-readable format is required from the client.
 
-**Получите явное подтверждение существенного выбора.** Уполномоченный человек должен принять условия выбранного варианта. Понятного письменного подтверждения достаточно; при неоднозначности поможет короткий разговор о конкретных вариантах. Это не экзамен клиента и не обязательный звонок по каждому вопросу. Принятое им предложение ИИ может стать требованием; это отдельно от подтверждения предпосылки и включения в текущий оплачиваемый объём.
+**Obtain explicit confirmation of a material choice.** An authorized person must accept the conditions of the chosen option. Clear written confirmation is enough; where there is ambiguity, a brief conversation about the specific options can help. This is not a test of the client or a mandatory call for every question. An AI suggestion they adopt can become a requirement; this is separate from confirming its premise and including it in the current paid scope.
 
-Проверка утверждения должна соответствовать [вопросу](../core.md#evidence): спрос проверяют с аудиторией, технический вопрос — по системе или разрешённой пробе. Дополнительный ответ модели или согласие двух моделей сами по себе не подтверждают рынок. ИИ может найти первичный источник или выполнить разрешённую проверку; основанием служит проверяемый источник или результат с условиями, а не убедительность текста.
+The way a claim is checked must match the [question](../core.md#evidence): check demand with the audience, and a technical question against the system or through a permitted test. Another model response, or agreement between two models, does not by itself substantiate a market claim. AI can find a primary source or carry out an authorized check; the basis is the verifiable source or result with its conditions, not the persuasiveness of the text.
 
-**Завершайте итерацию предметным следующим шагом.** Если раунд не дал новых оснований, существенного уточнения или изменения выбора, обобщите открытые вопросы и согласуйте следующее действие. При отсутствии решения запишите, что не принято, от кого нужен ответ и какую независимую работу можно продолжать. Если нет согласуемой приёмки, доступного владельца или ресурса на следующий этап, сузьте или приостановите зависимую часть. Само использование ИИ не является основанием отказать клиенту.
+**End an iteration with a concrete next step.** If a round produces no new evidence, material clarification, or change in the choice, summarize the open questions and agree on the next action. If no decision has been made, record what remains undecided, whose answer is needed, and what independent work can continue. If acceptance cannot be agreed, the owner is unavailable, or resources for the next phase are unavailable, narrow or pause the dependent part. AI use by itself is not a reason to turn a client away.
 
-Автоматическая проверка по заранее согласованным условиям допустима; её результат принимают в этих пределах. Делегация технического review не даёт агенту права менять объём, сроки, бюджет или критерии приёмки. За модель приёмки и существенные решения отвечает названный человек со стороны клиента. Ни его молчание, ни заключение агента вне согласованных условий не дают автоматической приёмки или права расширить объём.
+Automated checks under previously agreed conditions are permissible; their results are accepted within those limits. Delegating technical review does not give an agent authority to change scope, timing, budget, or acceptance criteria. A named person on the client side is responsible for the acceptance arrangement and material decisions. Neither their silence nor an agent's conclusion outside the agreed conditions provides automatic acceptance or authority to expand scope.
 
-Те же правила действуют для исполнителя: его AI-черновики тоже подлежат содержательной критике. Не обходите чужого проверяющего, не пытайтесь манипулировать его инструкциями и не передавайте закрытые материалы неразрешённым инструментам. Условия доступа к данным сохраняются для обеих сторон.
+The same rules apply to the supplier: their AI drafts are also subject to substantive criticism. Do not bypass someone else's reviewer, try to manipulate their instructions, or send confidential materials to unauthorized tools. Data access conditions remain in force for both sides.
 
-Условный диалог после согласования одного сценария первого этапа:
+An illustrative exchange after agreeing on one scenario for the first phase:
 
-> **Клиент:** «В замечаниях указано неверное описание подтверждения заявки. Ещё предлагаются групповые операции и отчёты — добавьте их».
+> **Client:** “The comments identify an incorrect description of request confirmation. They also suggest bulk operations and reports — add those.”
 >
-> **Команда:** «Ошибку в описании исправим. Групповые операции и отчёты расширяют согласованный этап: потребуются дополнительные сценарии и проверка, оценку и срок нужно пересмотреть. Подтвердите, что включаем сейчас и что ради этого переносим, либо сохраним прежний объём».
+> **Team:** “We'll correct the description. Bulk operations and reports expand the agreed phase: they require additional scenarios and checking, and the estimate and timeline need to be revised. Please confirm what to include now and what to defer to make room, or we can keep the original scope.”
 
-## Переход к оценке, SOW и разработке
+## Moving to an estimate, SOW, and development
 
-Оценка относится к конкретному объёму и условиям, а её уверенность зависит от основания. При передаче должны быть различимы:
+An estimate applies to a specific scope and set of conditions, and confidence in it depends on the supporting evidence. The handoff must distinguish:
 
-- подтверждённый объём и его версия;
-- существенные допущения и последствия их нарушения;
-- состояние зависимостей, включая доступность клиентских входов;
-- исключения, открытые вопросы и решения, необходимые до обязательства или запуска.
+- confirmed scope and its version;
+- material assumptions and the consequences if they do not hold;
+- dependency status, including the availability of client inputs;
+- exclusions, open questions, and decisions needed before a commitment or launch.
 
-Если основание слабое, покажите диапазон или условные варианты с объяснением причин. Произвольный запас не заменяет сведения о неподтверждённой интеграции.
+If the basis is weak, show a range or conditional options and explain why. An arbitrary contingency does not replace information about an unconfirmed integration.
 
-Репозиторий, каталог компонентов или демонстрация ещё не подтверждают готовую возможность для нового обязательства. До обещания переиспользования проверьте применимость к конкретному сценарию и существенные ограничения готовности. Оцените адаптацию, интеграцию, внедрение, освоение командой и дальнейшее владение: цена не сводится к написанию недостающего кода. Полный аудит платформы для этого не обязателен; актуальные проверки можно использовать, если они покрывают нужные условия. Сопоставляйте стоимость применения доступного решения со стоимостью его замены — это правило не предписывает писать заново.
+A repository, component catalog, or demonstration does not yet establish a ready capability for a new commitment. Before promising reuse, check applicability to the specific scenario and material readiness constraints. Estimate adaptation, integration, rollout, team adoption, and ongoing ownership: the cost is not limited to writing the missing code. A full platform audit is not required for this; current checks can be used if they cover the relevant conditions. Compare the cost of using the available solution with the cost of replacing it — this rule does not prescribe a rewrite.
 
-Общий замысел, первый оплачиваемый объём и будущие опции могут сосуществовать, но должны различаться. Возможность на дорожной карте не включается в SOW — согласованное описание работ — автоматически. При этом обязательные условия безопасной эксплуатации нельзя скрывать среди необязательных расширений.
+The overall concept, initial paid scope, and future options can coexist, but must remain distinct. A roadmap capability is not automatically included in the statement of work (SOW), the agreed description of work. At the same time, mandatory conditions for safe operation must not be hidden among optional extensions.
 
-Простая защита при передаче: формулировка «допущение до проверки» сохраняется в следующем документе, а известное противоречие получает явное разрешение или остаётся открытым условием. Его нельзя молча переносить в оценку и код. Если существенная находка меняет основание, обновляются оценка и SOW; при затронутых обязательствах изменение согласуют с их владельцами.
+A simple handoff safeguard: preserve the label “assumption pending verification” in the next document, and explicitly resolve a known contradiction or retain it as an open condition. It must not be silently carried into the estimate and code. If a material finding changes the basis, update the estimate and SOW; where commitments are affected, agree on the change with their owners.
 
-Для завершения описания, подписания обязательств и старта эксплуатации может требоваться разная глубина. Открытый вопрос не обязан блокировать всё сразу: обозначьте, какое именно действие от него зависит, кто отвечает и когда нужен ответ. Подтверждение исходного плана тоже полноценный результат.
+Completing a description, signing off on commitments, and going into operation may require different depths of investigation. An open question need not block everything at once: identify exactly which action depends on it, who is responsible, and when the answer is needed. Confirming the original plan is also a valid result.
 
 <a id="flow-control"></a>
-## Управление потоком, когда discovery становится очередью
+## Flow control when discovery becomes a queue
 
-**Drum–Buffer–Rope (DBR, «барабан — буфер — канат») из Theory of Constraints (теории ограничений) можно адаптировать как модель управления потоком, когда несколько discovery-задач конкурируют за одну дефицитную мощность.**
+**Drum–Buffer–Rope (DBR) from the Theory of Constraints can be adapted as a flow-control model when several discovery items compete for the same scarce capacity.**
 
-Продажи могут создавать возможности быстрее, чем команда успевает проверить основания для обязательств. Если запускать всё одновременно, растут незавершённая работа и переключения контекста. Новое назначение задачи ещё не приближает решение.
+Sales can generate opportunities faster than the team can check the basis for commitments. Starting everything at once increases work in progress and context switching. Assigning another task does not by itself bring a decision closer.
 
-### Как связаны готовая очередь и запуск
+### How the ready queue and work release connect
 
 ```mermaid
 flowchart TD
-    accTitle: Очередь discovery и управление запуском
-    accDescr: Концептуальная адаптация DBR. Потенциальные запросы проходят предварительную подготовку и попадают в небольшую готовую очередь перед работой ограничения. Правило запуска учитывает готовую очередь и доступную мощность, ограничивая новую активную работу. После анализа решение может ожидаться. Сплошные стрелки обозначают движение работы, пунктирные — сигналы управления.
-    Q["Потенциальные<br/>запросы"] --> P["Предварительная<br/>подготовка"]
-    P --> B["Буфер: небольшая<br/>готовая очередь"]
-    B --> A["Запущенная<br/>работа"]
-    A --> D["Барабан: работа<br/>текущего ограничения"]
-    D --> R["Результат;<br/>решение может<br/>ожидаться"]
-    C["Канат: правило<br/>запуска"] -.->|Запуск| A
-    B -.->|Очередь| C
-    D -.->|Мощность| C
+    accTitle: The discovery queue and work release
+    accDescr: A conceptual adaptation of DBR. Potential requests go through preliminary preparation and enter a small ready queue before work at the constraint. The release rule accounts for the ready queue and available capacity, limiting new active work. After analysis, a decision may remain pending. Solid arrows show the movement of work, and dotted arrows show control signals.
+    Q["Potential<br/>requests"] --> P["Preliminary<br/>preparation"]
+    P --> B["Buffer: small<br/>ready queue"]
+    B --> A["Released<br/>work"]
+    A --> D["Drum: work at<br/>the current constraint"]
+    D --> R["Result;<br/>decision may<br/>be pending"]
+    C["Rope: release<br/>rule"] -.->|Release| A
+    B -.->|Queue| C
+    D -.->|Capacity| C
 ```
 
-Это концептуальная схема адаптации: сплошные стрелки показывают движение работы, пунктирные — управление запуском. **Подготовка входов и начало активной проверки различаются.** Для подготовки следующего входа не нужно ждать опустошения буфера или копить исследования про запас; наличие очереди не разрешает запускать всё одновременно. Новую работу допускают по мощности ограничения. Ожидающееся решение не является разрешением зависимой реализации; если согласование задерживает поток, оно само может стать текущим ограничением.
+This is a conceptual diagram of the adaptation: solid arrows show the movement of work; dotted arrows show release control. **Preparing inputs and starting an active check are different.** Preparing the next input does not require waiting for the buffer to empty or stockpiling research; having a queue does not authorize starting everything at once. New work is released according to the constraint's capacity. A pending decision does not authorize dependent implementation; if agreement is holding up the flow, it can itself become the current constraint.
 
-Работа текущего ограничения задаёт темп потока. Ограничение — не автоматически BA и архитектор: им может быть клиентский предметный эксперт, принимающий продуктовые решения человек, специалист по обязательным требованиям или доступное тестовое окружение. Оно может измениться. Для готового входа понятны вопрос, контекст, прежние обещания и доступны нужные для ближайшей проверки сведения, люди или среда. Буфер — не BRD и не куча необработанных документов; канат — правило допуска, не звонок и не этап написания документа.
+Work at the current constraint sets the pace of the flow. The constraint is not automatically the BA and architect: it may be a client's subject matter expert, a person making product decisions, a specialist in mandatory requirements, or an available test environment. It can change. A ready input has a clear question, context, prior promises, and the information, people, or environment needed for its next check. The buffer is not a BRD or a pile of unprocessed documents; the rope is a release rule, not a call or a document-writing stage.
 
-Размер очереди выбирают так, чтобы ограничивающая способность не простаивала без базовых входов, без универсального числа задач. Продажи продолжают квалификацию, но дата запроса не означает немедленный старт исследования. Новые интервью или проверки также можно выпускать после обработки предыдущих результатов, если от них зависит следующий вопрос.
+Choose the queue size so that constrained capacity does not sit idle for lack of basic inputs; there is no universal number of tasks. Sales continues to qualify opportunities, but the date of a request does not mean research starts immediately. New interviews or checks can also be released after previous results have been processed, if the next question depends on them.
 
-Практический минимум: видны активные задачи, готовая очередь, заблокированные входы и человек, выбирающий следующий приоритет. Если срочный запрос вытесняет другой, последствия для обоих обещаний обсуждают явно. Проверяйте, сколько обоснованных решений и выполнимых обязательств проходит через систему и где они ждут. Полная загрузка архитектора не является целью.
+A practical minimum: active tasks, the ready queue, blocked inputs, and the person choosing the next priority are visible. If an urgent request displaces another, discuss the consequences for both promises explicitly. Check how many sound decisions and feasible commitments pass through the system and where they wait. Keeping the architect fully utilized is not the goal.
 
-Это управление потоком, не метод исследования и не шестой пункт Core. Для одной простой гипотезы без конкуренции за мощность оно не требуется. В стартапе и продуктовой компании такая адаптация уместна только при той же проблеме потока.
+This is flow control, not a research method or a sixth Core element. It is not required for a single simple hypothesis without competition for capacity. In a startup or product company, this adaptation is appropriate only when the same flow problem exists.
 
-Исходная логика описана в [материале Элияху Голдратта о DBR и управлении буферами](https://www.toc-goldratt.com/en/product/GSP-on-Operations-DBR-and-Buffer-Management). Небольшая очередь подготовленных discovery-задач и правила готовности выше — предлагаемая этим плейбуком адаптация.
+The original logic is described in [Eliyahu Goldratt's material on DBR and buffer management](https://www.toc-goldratt.com/en/product/GSP-on-Operations-DBR-and-Buffer-Management). The small queue of prepared discovery items and the readiness rules above are an adaptation proposed by this playbook.
 
-После завершения нескольких работ полезно разобрать конкретные потери: где поздно возникло противоречие, что потерялось при передаче, почему ожидание стало неожиданностью. Добавляйте защиту от наблюдаемого сбоя, а не новый документ на каждый возможный случай.
+After completing several pieces of work, it helps to examine specific losses: where a contradiction surfaced late, what was lost in a handoff, and why a wait came as a surprise. Add a safeguard against an observed failure, not another document for every possible case.
 
 ---
 
-[К началу Playbook](../README.md) · [Core](../core.md) · [Стартап](startup.md) · [Продуктовая компания](product-company.md)
+[Back to the Playbook](../README.md) · [Core](../core.md) · [Startup](startup.md) · [Product company](product-company.md)
