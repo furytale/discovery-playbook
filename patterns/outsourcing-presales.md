@@ -70,6 +70,8 @@ flowchart TD
 
 This map shows delegation and transfer boundaries. It does not replace joint problem framing or prescribe a sequence inside a product team. It does not require four separate people or departments; a simple question can bypass it. The next action may be a pause or a decision not to proceed; its recipient is whoever is assigned that work. Completed analysis is not a decision, and silence is not agreement. While a decision is pending, dependent implementation is not authorized; permissible independent work continues.
 
+Tailor the handoff to the next task. A reviewer needs the relevant original material and conditions; a decision owner needs the choice, alternatives, consequences, and supporting grounds; a coordinator needs current decisions and next work. Preserve source access where permitted. Neither the entire archive nor the same short summary suits every recipient, and brevity must not hide contrary evidence.
+
 The recipient must understand the assigned check. Teams can act within their delegated authority; shared understanding does not expand it. **Delegating a check does not transfer authority over budget, scope, or acceptance of residual risk.** Correcting a factual error requires appropriate evidence; management escalation requires a choice of action. A manager can fund a check or choose a workaround, but cannot declare that an unconfirmed API capability exists. A conclusion with a known contradiction must not be carried into the estimate as confirmed.
 
 <a id="responsibility-map"></a>
@@ -85,7 +87,13 @@ The recipient must understand the assigned check. Teams can act within their del
 
 This is an example of assigning functions, not a job description. Functions can be combined where the nature of the work allows it; a separate independent check is needed where it is actually required. Identifying a risk does not make that person responsible for all its consequences. The client and supplier may have different owners of commitments: one side's internal decision does not automatically change the other side's commitments.
 
-Technical review, including permitted automated review, does not confer authority to change scope or budget. Before sending the package to the client, it helps to check it as a whole: the description, diagram, mockup, and estimate must express the same decision with the same constraints.
+Review both whether a conclusion follows from the material and remains consistent with accepted decisions, and whether the result covers the scenarios, constraints, scope boundaries, reasoning, and unresolved questions its recipient needs. These checks do not require two reviewers. Completeness is relative to that use, not length. Do not remove a necessary scenario merely to eliminate a contradiction: correct it or explicitly agree on a change in scope.
+
+**From my practice.** After a corrected business requirements document became inadequate as a product description, I asked for its substance to be restored. The next pass started with an outline and a map of the source material, then assembled the document section by section. Later cleanup removed repetition and internal clutter.
+
+That approach is useful when a large synthesis loses content; it is not a required document pipeline. Check the assembled result as a whole: the description, diagram, mockup, and estimate must express the same decision with the same constraints.
+
+For a substantial accepted correction, inspect the changed passage in the current version, a visible diff, and affected downstream materials. Check that the correction took effect and preserved needed coverage. An acknowledgment, proposed patch, filename containing “Final,” or tracker status does not establish that the result changed. Technical review, including permitted automated review, does not confer authority to change scope or budget. See [AI-assisted research](../ai-assisted-research.md) for applying these checks during research; client acceptance is covered separately below.
 
 ## Fixed effort and the limits of the result
 
@@ -95,7 +103,7 @@ For example, an allocation of 20–25 hours may define available capacity, but d
 
 If the limit includes a technical test, you can agree to provide a report on the conditions checked and their limitations. The limit alone cannot imply a promise that the required capability will be confirmed. Agree explicitly on acceptance criteria for paid work. The intended business effect explains its purpose; it does not replace those criteria or guarantee results beyond the engagement's scope or control.
 
-At the effort limit, review the evidence gathered. Options include an estimate for the confirmed scope, a narrower option, another bounded check, waiting for an external condition, or stopping. Exhausting the budget does not prove readiness. Remaining questions do not automatically authorize further spending either: the next check must be capable of changing the decision.
+At the effort limit, review the evidence gathered. Options include an estimate for the confirmed scope, a narrower option, another bounded check, waiting for an external condition, or stopping. Exhausting the budget does not prove readiness. Remaining questions do not automatically authorize further spending either. Any proposed continuation needs a useful purpose—informing the choice or completing a usable result—and agreement on the scope and effort available; it need not collect new observations.
 
 <a id="ai-mediated-review"></a>
 ## When the client uses AI for responses and acceptance
@@ -140,11 +148,11 @@ An estimate applies to a specific scope and set of conditions, and confidence in
 
 If the basis is weak, show a range or conditional options and explain why. An arbitrary contingency does not replace information about an unconfirmed integration.
 
-A repository, component catalog, or demonstration does not yet establish a ready capability for a new commitment. Before promising reuse, check applicability to the specific scenario and material readiness constraints. Estimate adaptation, integration, rollout, team adoption, and ongoing ownership: the cost is not limited to writing the missing code. A full platform audit is not required for this; current checks can be used if they cover the relevant conditions. Compare the cost of using the available solution with the cost of replacing it — this rule does not prescribe a rewrite.
+A repository, component catalog, or demonstration does not yet establish a ready capability for a new commitment. Before promising reuse, [check applicability to the specific scenario and material readiness constraints](product-company.md#make-constraints-part-of-the-decision). Estimate adaptation, integration, rollout, team adoption, and ongoing ownership: the cost is not limited to writing the missing code. A full platform audit is not required for this; current checks can be used if they cover the relevant conditions. Compare the cost of using the available solution with the cost of replacing it — this rule does not prescribe a rewrite.
 
-The overall concept, initial paid scope, and future options can coexist, but must remain distinct. A roadmap capability is not automatically included in the statement of work (SOW), the agreed description of work. At the same time, mandatory conditions for safe operation must not be hidden among optional extensions.
+The overall concept, initial paid scope, and future options can coexist, but must remain distinct. A narrow implementation scope can still have a useful product explanation. A roadmap capability is not automatically included in the statement of work (SOW), the agreed description of work. Do not let an old architecture prompt silently restore excluded features; propose and agree a justified new requirement explicitly. Mandatory conditions for safe operation must not be hidden among optional extensions.
 
-A simple handoff safeguard: preserve the label “assumption pending verification” in the next document, and explicitly resolve a known contradiction or retain it as an open condition. It must not be silently carried into the estimate and code. If a material finding changes the basis, update the estimate and SOW; where commitments are affected, agree on the change with their owners.
+A simple handoff safeguard: preserve the label “assumption pending verification” with its open question, owner, and review condition. It can support bounded, reversible exploration without becoming a final answer. Explicitly resolve a known contradiction or retain it as an open condition; do not silently carry it into the estimate or code as confirmed. If a material finding changes the basis, update the estimate and SOW; where commitments are affected, agree on the change with their owners.
 
 Completing a description, signing off on commitments, and going into operation may require different depths of investigation. An open question need not block everything at once: identify exactly which action depends on it, who is responsible, and when the answer is needed. Confirming the original plan is also a valid result.
 

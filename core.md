@@ -162,13 +162,17 @@ Choose the smallest **meaningful and admissible** check of the material assumpti
 
 Distinguish observation, interpretation, and an accepted assumption. A recommendation proposes an action on that basis; a decision records the choice of an authorized participant.
 
-The weight of a source depends on the question, proximity to the event, coverage, and corroboration. A firsthand account is primary evidence of what the person did and observed. A document lets you check its text and version, but the existence of a requirement does not establish that it was communicated, understood in the same way, or agreed. Neither a personal account nor a retrospective compiled from other material establishes, by itself, other people's motives, universal causes, or the effect of the rules. Check discrepancies against timing, subject matter, and the observer's perspective; preserve unresolved differences. Repeating an account in several AI syntheses does not create independent corroboration.
+The weight of a source depends on the question, proximity to the event, coverage, and corroboration. A firsthand account is primary evidence of what the person did and observed. A document lets you check its text and version, but the existence of a requirement does not establish that it was communicated, understood in the same way, or agreed. Neither a personal account nor a retrospective compiled from other material establishes, by itself, other people's motives, universal causes, or the effect of the rules. Check discrepancies against timing, subject matter, and the observer's perspective; preserve unresolved differences.
+
+Trace the origin of repeated findings. Several retellings of one observation are not additional observations; a shared file can still contain distinct observations. Several researchers filling a required template field are not independently discovering the same need. Requirements deliberately imposed by the owner may be valid design constraints. Keep what the team instructed, what sources support, and what it chose to make common distinguishable. Shared templates remain useful for comparison; their repeated structure is not evidence of shared demand.
+
+Preserve context and unknowns in comparisons. An empty cell does not mean zero, an impossible capability, or a negative test result. To claim that an event did not occur, explain where it should have been observable and whether the method could detect it. The [AI-assisted research companion](ai-assisted-research.md) applies these distinctions to synthesis and critical review.
 
 ### When it is enough
 
-You can explain what has been established, on what basis, under which conditions, and what remains unchecked. The result lets you compare options, rule one out, or acknowledge that the chosen check did not answer the question.
+You can explain what has been established, on what basis, under which conditions, and what remains unchecked. The result lets you compare options, rule one out, or acknowledge that the chosen check did not answer the question. It also retains the scenarios, constraints, and reasoning its recipient needs; consistency alone does not establish useful coverage.
 
-**“Not confirmed” does not automatically mean “disproved.”** Nor does the absence of disproof confirm a hypothesis. A failed small test does not reject an entire customer need; a positive one does not establish a population-wide rate or satisfy an unmet mandatory safety condition.
+**“Not confirmed” does not automatically mean “disproved.”** Nor does the absence of disproof confirm a hypothesis. A failed small test does not, by itself, rule out the underlying customer need. A positive one does not establish a population-wide rate or satisfy an unmet mandatory safety condition.
 
 **Checking question:** “Does this evidence answer our question, or does it merely look related?”
 
@@ -199,9 +203,11 @@ Choose depth based on the severity and reach of the consequences, whether the ac
 
 Risks of the future decision—such as an unsuitable integration or a new step users find unacceptable—differ from the risks of running discovery. Evidence may become outdated before the decision; delays and cost overruns in the investigation itself also need a response.
 
+A bounded sketch or technical comparison can proceed on an explicit working assumption. Keep its open question, owner, and review condition visible. Permission for reversible exploration does not authorize deployment.
+
 When new information arrives, the criterion can be revised explicitly, with an explanation, rather than silently moved until the desired answer appears.
 
-Before doing more work, it helps to ask: “What possible result of this check would change our decision?” If such a result is possible but the method cannot produce it, change the method. If the answer would not affect the action, defer the research.
+Before doing more work, name how it can help the decision or make its result usable. A check may change the choice; a critical or synthesis pass may expose a contradiction, connect existing evidence, or restore a needed explanation. These can justify bounded work without new observations. If the needed answer is beyond the method's reach, change the method. If another pass has no useful purpose, stop.
 
 <a id="risk-response-map"></a>
 **How to choose a response to risk**
@@ -249,7 +255,7 @@ The outcome may be to continue with explicit residual risk within the decision o
 
 Accepting risk does not turn an assumption into a fact or waive mandatory conditions for safe action. For a remaining material risk, the consequences, the person responsible for the agreed action, and the condition for revisiting it must be clear. A lack of response does not mean that risk has been accepted.
 
-Record material decisions where the team actually looks for its tasks and commitments. If a decision changes scope or an assumption behind the estimate, the relevant materials must change. A known contradiction must not silently pass into requirements, an estimate, or implementation. Hand over the chosen option, its limits, and relevant assumptions, without copying the entire research archive.
+Record material decisions where the team actually looks for its tasks and commitments. If a decision changes scope or an assumption behind the estimate, the relevant materials must change. For a substantial accepted correction, inspect the current passage and affected downstream materials; an acknowledgment is not a changed result. A known contradiction must not silently pass into requirements, an estimate, or implementation. Hand over the chosen option, its limits, and relevant assumptions, with the [basis needed for the recipient's next task](patterns/outsourcing-presales.md#handoff-map).
 
 ### When it is enough
 

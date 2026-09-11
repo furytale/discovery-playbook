@@ -37,6 +37,8 @@ If the question concerns a technical capability, use applicable documentation, c
 
 Trace one end-to-end scenario through the affected systems and teams. Find out what data and permissions are needed, where existing contracts remain in place, who handles failures, and who will maintain the result. Include deployment, migration, and ongoing ownership in the platform or integration estimate.
 
+Designing a shared capability around several known scenarios is **co-design**. It can improve the design, but does not by itself show how an already chosen solution transfers to another context. For a reuse question, identify the reference version and examine the other scenario's requirements separately enough to reveal differences. Show the adaptation, integration, adoption, and ownership costs. A version reference or snapshot can be enough; no permanent freeze is required. Synthetic contrast scenarios can inform this design question, but do not establish a real deployment or market acceptance.
+
 Separately, compare the new step with current commitments: service availability, promised capabilities and deadlines, support workload, conditions for handling data, and required approvals. If commitments need to change, the initiative owner agrees on those changes with the owners of the affected products. A pilot plan does not authorize silently postponing their delivery or degrading service.
 
 Distinguish an unknown fact from a decision that has not been made. Migration feasibility requires a technical check; postponing a commitment requires a decision by the authorized owner. A discovered contradiction must change the dependent plan before it reaches implementation. Safe, independent work can continue while the contradiction is being resolved.
@@ -61,7 +63,7 @@ Several initiatives may need the same domain expert, architect, data specialist,
 
 If a persistent queue develops, you can use [the conditional DBR adaptation for flow control](outsourcing-presales.md#flow-control): keep a small queue of questions with the necessary inputs and release work as the shared specialist becomes available. A single initiative without this competition does not need a separate mechanism.
 
-Separately from learning whether a product decision produced value, examine how discovery worked: which assumption was missed, which check changed the choice, and what delayed understanding. Use recurring failures to refine a playbook rule; a minor question need not trigger a separate retrospective or a new mandatory stage.
+Separately from learning whether a product decision produced value, examine how discovery worked: which assumption was missed, which check changed the choice, and what delayed understanding. Refine a playbook rule when an observed failure justifies the change; a minor question need not trigger a separate retrospective or a new mandatory stage.
 
 ---
 
