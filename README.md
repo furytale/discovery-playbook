@@ -12,7 +12,7 @@ The outcome may be a first use case, a boundary for reuse, a pilot decision, cla
 
 The playbook is for CTOs, solution architects, business analysts, product leaders, and technical founders. It helps connect material unknowns to the next decision before they turn into code, an estimate, or a commitment.
 
-**Version 0.1.** This is an evolving practitioner playbook assembled from retrospectives and external ideas about problem-solving and organizing work. Its effectiveness as a complete method has not been formally measured. It is not a scientifically proven universal method.
+**Version 0.1.** An evolving practitioner playbook. Its rules have contextual boundaries and develop through use; effectiveness as a complete method has not been formally measured.
 
 ## Start with the Core
 
@@ -52,17 +52,21 @@ English is the canonical language of this playbook, future contributions, and th
 
 The playbook does not prescribe a universal set of meetings, documents, job titles, or a fixed research duration. It also does not replace development, quality checks, or management decisions. A coordinator, a reviewer with the relevant expertise, and escalation rules are needed to the extent that findings, authority, or commitments would otherwise be lost; separate staff roles are not required.
 
+[AI-assisted research without losing the thread](ai-assisted-research.md) is an optional companion for preparing useful AI tasks, checking findings and corrections, and passing on the right context. It applies the existing Core within any of the three contexts.
+
 **DBR** is described in the section on [managing a discovery queue](patterns/outsourcing-presales.md#flow-control). It is an optional way to align work release with available constrained capacity, not a research method or a sixth Core element. It fits situations where several initiatives compete for one specialist, access to an environment, or another shared limited capability.
 
 DBR is not required for a single bounded question without a flow problem. In a startup or product company, it makes sense when the same competition for shared capacity exists.
 
 ## Foundations and development
 
-The playbook is grounded in Anton Kazka's firsthand professional practice and reflection on that experience. This explains the choice of problems, but does not by itself establish the effectiveness of the rules. Brief illustrations explain their use without publishing case histories. Firsthand accounts are evidence of what the author did and observed; they do not establish other people's motives or prove universal causes of success or failure.
+I developed this playbook through discovery and AI-assisted research: organizing the work, working with participants and client constraints, and dealing with errors, rework, and decisions. That work involved my own money and effort, company spending, and financial failures, including consequences for clients. The lessons concern concrete work: checking what a finding rests on, preserving useful content through corrections, and keeping the organization manageable for the people doing it.
+
+Notes labeled **From my practice** describe real episodes with identifying details omitted. The end-to-end Core illustration is explicitly hypothetical. These research-practice lessons come from my work; the external influences below are attributed separately.
 
 Selected refinements draw on Teresa Torres, *Continuous Discovery Habits: Discover Products That Create Customer Value and Business Value* (Product Talk LLC, 2021): intended effects (chs. 3, 11), comparing options and testing assumptions (chs. 2, 5, 9–10), shared understanding (chs. 1–2, 13), and continued learning (chs. 1, 5, 11, 14). Torres's model includes a product trio and at least weekly customer touchpoints by the team building the product. Competence-based participation, no fixed quota of alternatives, and finite-engagement boundaries are this playbook's adaptations to wider contexts, not her full model. DBR has a separate source and purpose.
 
-After applying the playbook, review which assumption changed, where a decision was lost, and what helped people make it. Add a rule when a specific problem recurs and the cost of a safeguard is understood. A small question does not require a separate retrospective meeting.
+After applying the playbook, review which assumption changed, where a decision was lost, and what helped people make it. A serious one-off failure can justify a targeted safeguard; recurring problems can reveal where a rule needs to change. A small question does not require a separate retrospective meeting.
 
 ---
 

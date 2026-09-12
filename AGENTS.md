@@ -11,3 +11,5 @@ Keep private transcripts, client details, internal retrospectives, and execution
 Preserve stable anchors. When editing, check affected links, table relationships, and Mermaid meaning and rendering. Report checks honestly, distinguishing local previews from actual GitHub rendering. Keep generated review artifacts outside the repository.
 
 Do not push, merge, publish releases, or rewrite history without an explicit request. Preserve unrelated work and stage only intended files.
+
+Preserve Anton Kazka's firsthand agency and supported results. Distinguish anonymized real episodes from hypothetical illustrations. Omit case-specific client, company, product, and research-program identifiers; do not invent actions, outcomes, amounts, or causal explanations.
