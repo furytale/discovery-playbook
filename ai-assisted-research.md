@@ -2,47 +2,142 @@
 
 [Back to the Playbook](README.md) · [Core](core.md)
 
-Use this optional companion when AI helps with a research question, comparison, review, or synthesis. The [five-part Core](core.md) still applies. Use the guidance needed for your next task; no additional workflow, team, or document set is required.
+Use this optional companion to prepare a useful AI request, inspect its result, and pass the work on. The [five-part Core](core.md) still applies. Start with the example, then use the guidance relevant to your question.
+
+<a id="worked-example"></a>
+## Worked example: check a draft before estimation
+
+**Hypothetical teaching example.** The extracts, sample response, correction, and next actions below are invented illustrations, not an actual model transcript or completed client experiment.
+
+You are checking a revised first-phase integration description for engineering estimation. You may restore wording to the agreed scope; changing that scope needs its authorized owner. The task is to produce a usable description and identify the next technical question, not authorize launch.
+
+### Inputs
+
+**Agreed scope**
+
+> In the first phase, an operator reviews each individual request and confirms its transfer from one system to the other. Bulk transfer is outside this phase.
+
+**Current technical note**
+
+> The receiving interface's retry behavior has not been checked. We do not yet know whether resending a request can create a duplicate. No result from a technical probe is available.
+
+**Revised draft under review**
+
+> Requests are transferred automatically between the systems. Retries cannot create duplicate requests.
+
+The scope records a choice, not technical feasibility. A newer draft has no authority to change it without an authorized decision.
+
+### Request to AI
+
+```text
+Use the three labeled extracts.
+Check the draft before estimation.
+Find lost scope or conditions and
+unsupported technical claims.
+For each issue, show the passage
+and its basis in the inputs.
+Propose a correction or a question.
+Separate permitted corrections
+from choices for the scope owner.
+Check correctness and coverage.
+Do not invent missing behavior
+or results from tests not run.
+The draft is not a scope decision.
+```
+
+When adapting this request, supply your corresponding extracts. It assumes only the visible material, not access to an unseen repository or earlier chat.
+
+### Sample useful response
+
+This is an illustrative response, not a guarantee of what a model will return:
+
+- **Lost operator confirmation.** “Requests are transferred automatically” omits the scope's operator review and confirmation. Restore them within the analyst's stated delegation.
+- **Missing scope boundary.** The scope excludes bulk transfer; the draft omits that exclusion. Preserve it. This is not evidence that the draft explicitly requested bulk functionality.
+- **Unsupported guarantee.** “Retries cannot create duplicate requests” conflicts with the technical note's stated uncertainty. Remove the guarantee, retain the retry question, and identify an appropriate technical check.
+
+If the draft already preserves these conditions and the uncertainty, a useful response is “No material discrepancy found against these inputs.” Do not manufacture an edit or another reviewer.
+
+### Correct, verify, and hand off
+
+**Proposed corrected passage — still part of the hypothetical example:**
+
+> In the first phase, the operator reviews each request and confirms its transfer. Bulk transfer remains outside this phase. Retry behavior is unverified; whether resending can create a duplicate remains an open technical question.
+
+Compare that passage with the scope and technical note. Apply only the permitted correction, then inspect the current file or visible diff: are operator confirmation, the bulk exclusion, and the retry question all present? If the file still contains the original text, the correction is unapplied, whatever the model says. Carry the unresolved condition into the estimate and relevant diagram.
+
+**Filled-in handoff for this example:**
+
+- **To the engineer:** Examine applicable interface documentation and existing results for duplicate behavior on retry. If they answer the question, return the evidence and its conditions. Otherwise, propose a bounded check in an authorized environment. If no suitable check is available, leave the question open and limit the dependent claim. This request authorizes neither production traffic nor a claim that a test has run.
+- **To the scope owner, only if change is proposed:** Removing operator confirmation or adding bulk transfer changes the accepted phase. Present the proposed scope, consequences, and choice needed. Restoring agreed wording within delegation needs no extra management approval.
+
+The editorial task can finish with this corrected description and a specific open question. It need not produce a successful probe or a closed integration risk. A proposed edit becomes a completed correction only after the changed result is checked.
+
+### How the interaction works
+
+```mermaid
+---
+config:
+  flowchart:
+    nodeSpacing: 15
+    rankSpacing: 25
+    padding: 8
+---
+flowchart TD
+    accTitle: From a proposed finding to a checked handoff
+    accDescr: Current material and accepted constraints enter AI comparison, followed by competent human review. Missing facts go to an appropriate source, participant, or permitted check; evidence or a remaining gap returns to analysis. A new scope trade-off goes to its authorized owner and the decision returns as current context. Supported corrections are applied within delegation and the actual result is checked before handoff with remaining limits. A no-edit result can go straight from review to checking the current result.
+    C["Question, scope,<br/>current material"] -->|Material| A["AI comparison"]
+    A -->|Proposed<br/>finding| H["Human review<br/>against sources"]
+    H -->|Missing<br/>fact| F["Source,<br/>person,<br/>or check"]
+    F -->|Evidence<br/>or gap| A
+    H -->|New<br/>trade-off| O["Authorized<br/>owner"]
+    O -->|Decision| C
+    H -->|Supported<br/>correction| E["Apply in<br/>delegated<br/>scope"]
+    E -->|Changed<br/>passage| V["Check current<br/>result"]
+    H -->|No edit<br/>needed| V
+    V -->|Checked<br/>result| T["Handoff with<br/>remaining limits"]
+```
+
+These are interactions for the example, not required stages or separate jobs. One person can perform several functions. Human review cannot turn a missing fact into evidence: use an appropriate source, participant, or permitted check. AI may use permitted tools; the source or actual result supports the finding. A checked handoff can retain an open condition and does not authorize implementation or launch.
 
 ## Give AI a useful piece of work
 
-Name the question, who will use the result, and what they need to do with it. Supply relevant current inputs, constraints, exclusions, and the result needed. Set an effort limit. If applicable evidence already answers the question, use it; another interview, conversation, or research pass is unnecessary.
+Adapt the [worked request](#worked-example) to the question, intended use, current inputs, constraints, and effort limit. AI can inspect sources, generate questions and alternatives, compare versions, draft, critique, or synthesize. Choose the useful function; do not run them all by default. Existing applicable evidence may make another pass unnecessary.
 
-AI can help inspect sources, generate questions and alternatives, compare versions, draft, challenge a conclusion, or synthesize existing material. Choose that work deliberately. An explanation of imagined user behavior cannot answer how people actually behave. Human experience, contact with participants, and suitable external checks remain part of the work.
-
-Keep the relevant source passages, observations, and conditions accessible. A polished report should let someone follow a consequential claim back to its basis. A firsthand account supports what the participant did and observed; a formal summary does not supersede it merely by looking more authoritative.
+Keep relevant passages and conditions accessible. A firsthand account supports what the participant did and observed; a formal-looking summary does not supersede it. Questions about actual behavior still need suitable participant evidence or external checks, not a more detailed imagined account.
 
 ## Split work when the separation helps
 
-One conversation can support both exploration and a critical pass. Separate work when it needs another method, a separate search, different expertise, parallel effort, or more room for material. Make clear who coordinates it and assembles the result: preserving context and reconciling findings take effort.
-
-A separate chat or expert persona is not independent evidence. Agreement between models is not a vote on truth. A second perspective earns its place by finding an omission, testing a claim, or improving the result. Avoid splitting work so finely that recovering its context becomes the main job.
+One conversation can support exploration and critique. Separate work for another method, search, expertise, parallel task, or volume, with someone responsible for coordination and assembly. A separate chat or persona is not independent evidence, and model agreement is not a vote on truth. Use the second perspective to find omissions or challenge a claim; account for the cost of reconstructing context.
 
 ## Ask where a repeated pattern came from
 
 **From my practice.** In research I organized, a review found that requirements inherited from a shared brief and repeated across reports were being used to support common platform capabilities. The review exposed where the repetition came from: the brief itself. The lesson I took was to separate the instructions we gave from the common needs the material could actually support.
 
-A shared template can help compare findings. Distinguish required fields, owner-imposed constraints, and observations supporting a chosen common capability. Retelling an observation adds no new observation; distinct observations in one file still count as distinct. When comparing results, preserve relevant context and unknowns rather than filling gaps with zeroes or negative conclusions. See [Evidence](core.md#evidence) for the limits of these inferences.
+**Separate fictional illustration:**
+
+- **Instruction given to every report:** “Describe a central review capability for each context.”
+- **Reports:** Two reports each contain a central-review section.
+- **Before — unsupported conclusion:** “Both contexts independently demand central review.”
+- **Check:** Compare the shared instruction with those sections and the relevant observations, if available.
+- **After — supported conclusion:** “Central review was required by the brief. Repeated sections alone do not establish independent demand.”
+
+The capability may be an intentional design constraint. Use existing observations if they support demand; if they are missing, leave that claim open rather than declaring demand absent. Retellings add no observations, while distinct observations in one file remain distinct. Preserve context and unknowns in comparisons: an empty field is not a negative finding. See [Evidence](core.md#evidence).
 
 ## Make critique change the result
 
-Ask which claim is unsupported, which source or condition changes its meaning, which alternative was overlooked, and what the recipient still needs. Check both whether the conclusion follows and whether the result covers the necessary scenarios, constraints, reasoning, and open questions. These are different checks, not two mandatory reviewers.
-
 **From my practice.** In another research effort I organized, a reviewer challenged the ranking of problems, the transfer of conclusions between directions, and links between claims and sources. In the revised result, a claim became a hypothesis and the ranking became an assumption; source use and transfer limits were clarified. The critical pass changed what the team could rely on, beyond improving the prose.
 
-For a substantial accepted correction, inspect the changed passage in the current version, its diff, and affected downstream materials. An acknowledgment, proposed patch, tracker status, or filename saying “Final” does not establish that the result changed. A reviewer can challenge a conclusion; material changes to scope or commitments still need the authorized owner's choice.
+The [fictional correction above](#worked-example) shows how to use this lesson: compare the proposal with its basis, inspect the applied change, and preserve coverage and unresolved conditions downstream. Correctness and sufficient coverage are distinct checks, not separate required reviewers. “Noted,” a proposed patch, tracker status, or “Final” in a filename is not the changed result.
 
-If removing a contradiction also removes needed content, restore it consistently with the agreed scope or explicitly agree to rescope it. If a large synthesis loses sections, start with an outline and a simple map of the sources supplying each section. Assemble and review by sections, then check the complete result for consistency. Use this remedy when needed; short tasks do not need a document pipeline.
+If a large synthesis loses content, map the needed sections to their sources, assemble by sections, then check the whole result. This is a remedy for lost coverage, not a pipeline for every short task.
 
 ## Give the next participant current, usable context
 
-Pass the chosen scope, exclusions, accepted assumptions, unresolved issues, actual version, and requested next action. An old architecture prompt must not silently restore excluded features. A justified new requirement can be proposed and agreed explicitly. A working assumption can support bounded, reversible exploration while its open question, owner, and review condition stay visible.
+Pass the chosen scope, exclusions, assumptions, open questions, actual version, and requested next action. An old architecture prompt must not silently restore excluded features. A working assumption can support bounded, reversible exploration when its open question, owner, and review condition remain visible; it does not authorize deployment.
 
-Keep one authoritative location for each current decision, with clearly derived views where useful. That does not mean one huge file for everything. Preserve history and update affected materials when the decision changes; do not let several summaries become competing sources of current state.
+Keep one authoritative location per current decision, with clearly derived views as needed. Preserve history and update affected materials. Tailor access: a reviewer needs original grounds and conditions; a decision owner needs options and consequences; a coordinator needs current decisions and next work. Neither the full archive nor one identical summary suits everyone. Brevity must not hide contrary evidence.
 
-Tailor context to the task. A reviewer needs relevant original material and conditions; a decision owner needs the choice, alternatives, consequences, and supporting grounds; a coordinator needs current decisions and next work. Neither the entire chat history nor the same short summary suits everyone. Keep contrary evidence accessible rather than editing it out for brevity.
-
-Working access does not imply permission to disclose material to another system or recipient. Use the agreed recipient and disclosure boundaries. Reliable handoff supports the shared understanding already established with the people doing the work; it does not replace their participation. [Client use of AI in acceptance](patterns/outsourcing-presales.md#ai-mediated-review) is a separate situation with its own commitment boundaries.
+Working access is not permission to disclose material elsewhere. Respect the recipient and disclosure boundaries. Handoff supports shared understanding and does not replace participation. [Client use of AI in acceptance](patterns/outsourcing-presales.md#ai-mediated-review) remains a separate situation with its own commitment boundaries.
 
 ## Repair the failure you actually have
 
@@ -54,12 +149,10 @@ Working access does not imply permission to disclose material to another system 
 | Outdated state | Check the current version and accepted decisions, compare changes, and update the affected materials. |
 | A file, link, or format problem | Use ordinary file, diff, link, or schema checks to identify the defect and verify its repair. |
 
-AI may use permitted tools, but naming a tool or reporting “updated” is not verification. Inspect the actual output. Adding a reviewer does not substitute for repairing a broken file, and a larger prompt cannot replace absent external data. Address the source of the failure before adding a standing procedure.
+AI may use permitted tools, but inspect the output rather than relying on “updated.” Adding a reviewer does not substitute for repairing a broken file; a larger prompt cannot replace absent external data. Match the repair to the failure before adding a standing procedure.
 
 ## Finish useful work, then follow through
 
-An additional pass can reveal a relationship, test an objection, improve an explanation, restore coverage, or prepare the result for its recipient without collecting new observations. Name that purpose and limit the effort. Mere rephrasing is not progress unless editing is the task. Useful synthesis creates understanding, not automatically new evidence; the [sufficient-depth question](core.md#sufficient-depth) does not forbid useful interpretation.
+A pass can reveal a relationship, test an objection, improve an explanation, restore coverage, or prepare a handoff without adding observations. Name the purpose and effort limit. Rephrasing is useful when editing is the task; synthesis creates understanding, not automatically independent evidence. The [sufficient-depth question](core.md#sufficient-depth) allows this work.
 
-Finish by making clear what was established, what remains assumed, and what action is chosen or awaits a decision. Carry the grounds and conditions into the materials used for that action. Confirming the original plan is a valid result. Preserve who acts, who observes later results, and when to return to the question under [Decision / stop](core.md#decision-stop); an agreed engagement can still close without promising unlimited follow-up.
-
-Judge the organization by useful findings, decisions, completed corrections, rework, and load on people. Archive size is a measure of material to maintain, not the value of the research.
+Finish with what was established, what remains assumed, and the action chosen or awaiting a decision. Preserve who acts, who observes later results, and when to revisit under [Decision / stop](core.md#decision-stop). An agreed engagement can close without unlimited follow-up. Judge the organization by useful findings, decisions, checked corrections, rework, and load on people—not archive size.
