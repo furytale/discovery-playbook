@@ -53,9 +53,20 @@ Functions can combine and repeat. Return to the function needed by a particular 
 
 ### Set the question (Frame)
 
-State what must be learned, for whom, and what action or understanding it enables. Name the expected result, exclusions, available effort, and method. In the teaching case, process accounts and interface documentation support a comparison of automation options; the pass selects a next check.
+State what must be learned, for whom, and what action or understanding it enables. Name the expected result, exclusions, available effort, and method.
 
-Have participants restate their assignments before substantial separate work. Compare the questions, expected outputs, and dependencies; correct different assignments without requiring the same preferred answer. Keep that agreed starting point available to everyone doing dependent work.
+#### Break the request into research questions
+
+Use this when a request is too broad to assign or several investigations must contribute to one answer. A clear small question needs no tree.
+
+1. **Write the parent question and limits.** A requested solution is an option or accepted constraint, not a diagnosed cause.
+2. **List the questions it depends on.** Use a shallow outline. Check for a missing perspective or different framing; avoid asserted causes and lists of desired components.
+3. **Explain what each answer could change.** Merge accidental duplicates and show genuine dependencies.
+4. **Select work for now.** Weigh consequences, usefulness to the next choice, dependencies, available evidence, and checking cost. The easiest check may not help. An external constraint can matter even if you cannot change it.
+5. **Assign selected questions** in the [existing table](#agree-the-assignments): human owner, material or method, expected return, and affected colleague or decision. Mark deferred questions and why they can wait.
+6. **Have owners restate the work.** Stop decomposing when each can explain what they will inspect, return, and potentially change in the common answer. Different candidate answers remain welcome.
+
+Keep the selected questions and reasons in the shared note; revise them when findings change the problem. The case's assignments below show this breakdown without a second tracker.
 
 ### Gather information (Acquire)
 
@@ -102,13 +113,15 @@ The coordination practices below are the response developed from discussing that
 
 Before separating, agree the common question, accepted scope, current sources, assumptions, exclusions, expected combined result, available effort, and first comparison point. Distinguish accepted decisions from proposals and older material. Each researcher states their question, result, excluded topics, and answers needed from colleagues. Compare these statements before expensive dependent work.
 
-**Teaching case assignments:** the shared inquiry selects a next check for request transfer. Bulk processing and delivery-effort estimation are excluded. Agree the actual effort limit before starting; this illustration supplies no hours.
+**Teaching case assignments:** break down the [parent question about request transfer](#what-a-usable-research-result-looks-like) into the selected questions below. Agree the actual effort limit before starting; this illustration supplies no hours.
 
 | Question | Human owner | Result to return | Colleague / dependency and when to share |
 |---|---|---|---|
-| What happens to complete and incomplete requests? | BA | Described actions, exceptions, sources, and unknowns. | Architect: first findings before developing the automation option. |
-| What does the interface establish, and what needs checking? | Architect | Documented capabilities, gaps, and access conditions. | BA: when a condition changes the scenario or next check. |
-| Which next check do the findings support? | Research lead with both owners | Compared options, differences, and a recommendation. | Both owners before handoff to the process owner. |
+| What does the operator do beyond copying fields? | BA | Inspect complete/incomplete cases; return actions, exceptions, and unknowns. | Architect, before unattended design: required human work could change the option. |
+| What does the receiving interface support? | Architect | Inspect documentation and access conditions; return capabilities and draft/hold or retry gaps. | BA, when limits change the scenario or next check; separate documented operations from assumptions. |
+| Which useful comparison is possible before system access? | Research lead with both owners | Combine process findings and permitted methods; return compared options and a next check. | Both owners before handoff: select an informative check and preserve what it cannot answer. |
+
+Prioritize process understanding and technical gaps before detailed unattended design; documentation review can run in parallel. Check access conditions even though the team cannot grant access itself. Defer measuring operational savings until actual use; selecting a next check does not require that result. Bulk processing and delivery-effort questions remain outside this pass.
 
 One person may own several questions. The coordinator exposes dependencies, brings people into the needed discussion, and maintains the combined result; an AI chat is not the accountable owner. Coordination does not give someone authority to settle facts.
 
@@ -140,6 +153,19 @@ Each track uses the first diagram. Compare initial findings before substantial d
 Send the finding and source, remaining uncertainty, affected work, requested response, and next step. An activity count such as “read ten sources” does not tell a colleague what needs changing.
 
 Intentionally separate searches or critiques can protect independence. Agree their question and comparison point; do not force early sharing of tentative answers. Handle any impact on shared scope, safety, or commitments explicitly.
+
+### Write a working answer before the final report
+
+After an initial look, use a working answer when separate investigations could develop incompatible premises. A clear small question needs no extra note or checkpoint.
+
+1. **Write a provisional answer** in one or two sentences. If none is defensible, name the alternatives and missing information instead.
+2. **Put the basis beside it.** Separate observations or documentation from untested premises; keep a significant alternative visible.
+3. **Name what could change it.** Connect that uncertainty to an owned question and suitable check. Seek contrary evidence too.
+4. **Compare first findings:** do they support, weaken, change, or leave the answer open? Discuss the grounds. Respect the agreed comparison point for intentionally independent searches.
+5. **Record the revision:** previous answer, finding and basis, revised answer. [Update affected work](#update-affected-work); owners return what changed in assignments or AI contexts, or why their work still applies.
+6. **Separate recommendation from choice.** Ask the authorized owner for the next action where required; repetition does not turn a candidate into an agreed requirement.
+
+Use the shared working note. Check that it contains the current answer, grounds, alternatives, and next owned check. An unchanged answer with an explained basis is valid. The [case update](#share-the-finding-and-update-the-work) shows the revision and its effect on work.
 
 <a id="give-the-next-participant-current-usable-context"></a>
 ### Update affected work
@@ -195,13 +221,27 @@ The following material arrives during the inquiry; it was not all known at the s
 
 ### Share the finding and update the work
 
-Before this exchange, the architect's tentative interpretation is: “The create operation may let us remove the transfer step.” It is neither a decision nor demonstrated feasibility.
+After reading the interface excerpt, before applying the BA's process finding, the architect records this candidate:
+
+> **Working answer — architect, provisional:** The create operation may let us remove the transfer step. A reviewed draft or clearer manual checklist remains an alternative.
+>
+> **Basis and open premise:** Active creation is documented; whether operator work can be removed is untested.
+>
+> **What could change it:** Required work beyond copying fields would change the unattended option.
+>
+> **Next check and owner:** The BA returns complete/incomplete process cases at the first findings comparison.
 
 > **BA:** The operator's last incomplete request needed a missing address before submission. Review includes collecting information, not only copying fields. Please check how the unattended option would handle that step. The account does not tell us how often this happens.
 >
 > **Architect:** I changed the unattended option's premise: creation alone does not cover missing-information handling. I updated my task and AI comparison context to retain that question. The documented create operation still applies; draft support and retries remain unverified.
 
-The shared note and architect's current assignment now say: “Compare the unattended option including how missing information is obtained before submission; retain draft and retry gaps.” The earlier copying-only assumption has changed because of the process account. Check that this instruction is in the AI context actually used and that the comparison reflects it. Existing documentation work remains applicable; the BA's process work continues.
+The shared note and architect's current assignment now say: “Compare the unattended option including how missing information is obtained before submission; retain draft and retry gaps.” Check that this instruction is in the AI context actually used and that the comparison reflects it. Existing documentation work remains applicable; the BA's process work continues.
+
+| Moment | Working answer and effect on work |
+|---|---|
+| Before the process finding | Architect's unattended candidate depends on an untested premise about operator work. |
+| After examining the account | Creation alone misses information collection. Revise the unattended question and AI context, retaining the documented operation and technical gaps. |
+| After the option/access comparison below | Recommend comparing a reviewed draft and manual checklist on screen; keep unattended creation under investigation. The separate owner choice follows. |
 
 ### One interpretation task for AI
 
@@ -269,3 +309,5 @@ Choose measures for three different purposes. For the **question**, observe rele
 At the effort limit, use the result, narrow the question, change method, agree bounded continuation, or stop. Exhaustion does not prove readiness. A synthesis, explanation, or restoration can justify further bounded work without new observations. Confirming the original plan can be useful. Source counts, chats, meetings, model agreement, and archive size do not establish value.
 
 A serious one-off failure can justify a targeted safeguard. Evaluate whether it improves findings, decisions, corrections, rework, or people's load. Keep [sufficient depth](core.md#sufficient-depth) and [decision / stop](core.md#decision-stop) explicit. A finite engagement can end under agreed criteria; continuing observation needs an accepting recipient with access and resources. A name alone does not create that capacity. [Client AI use in acceptance](patterns/outsourcing-presales.md#ai-mediated-review) is a separate commitment question.
+
+**Source and adaptation.** Question breakdown with prioritization and work planning, and an early answer revised through iteration, draw on McKinsey's [“How to master the seven-step problem-solving process”](https://www.mckinsey.com/capabilities/strategy-and-corporate-finance/our-insights/how-to-master-the-seven-step-problem-solving-process) (September 13, 2019; Charles Conn and Hugo Sarrazin with Simon London). The procedures, working note, teaching case, and safeguards here are playbook adaptations, not the full seven-step model or a fixed research deadline. The author's firsthand accounts retain their separate basis.
