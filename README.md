@@ -52,7 +52,7 @@ English is the canonical language of this playbook, future contributions, and th
 
 The playbook does not prescribe a universal set of meetings, documents, job titles, or a fixed research duration. It also does not replace development, quality checks, or management decisions. A coordinator, a reviewer with the relevant expertise, and escalation rules are needed to the extent that findings, authority, or commitments would otherwise be lost; separate staff roles are not required.
 
-[AI-assisted research without losing the thread](ai-assisted-research.md) is an optional companion for preparing useful AI tasks, checking findings and corrections, and passing on the right context. It applies the existing Core within any of the three contexts.
+[AI-assisted research in discovery](ai-assisted-research.md) is an optional guide to investigating a question, coordinating related work with colleagues, and using checked findings. It applies the existing Core within any of the three contexts.
 
 **DBR** is described in the section on [managing a discovery queue](patterns/outsourcing-presales.md#flow-control). It is an optional way to align work release with available constrained capacity, not a research method or a sixth Core element. It fits situations where several initiatives compete for one specialist, access to an environment, or another shared limited capability.
 
