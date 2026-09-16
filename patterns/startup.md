@@ -1,6 +1,6 @@
 # Startup: test the next bet and keep work moving
 
-[Back to the Playbook](../README.md) · [Core](../core.md)
+[Back to the Playbook](../README.md) · [Core](../core.md) · [Research work](../research-work.md)
 
 In a startup, the next decision may concern either a first user scenario or a change to a product already in use. In both cases, [Core](../core.md) helps identify which unknown is worth checking before the next investment. The scale of the check depends on the consequences of an error and whether the action can be reversed.
 
@@ -32,7 +32,7 @@ In the request-handling example, consider whether clarifying responsibility or a
 
 If the idea depends on temporary interest in a technology or market, compare delivery time with the conditions underpinning the bet. The observation that “there is interest now” may be outdated by the time the product ships. Revisit that assumption before an expensive expansion; sometimes a shorter pilot can provide a useful answer sooner.
 
-Set a review date or trigger and name the decision owner. If the check reaches its limit, explicitly choose whether to narrow the step, run another bounded test, wait for a condition, or hold off on building. Exhausting the budget does not confirm the hypothesis. Remaining questions do not require more research either when there is already enough evidence for the next small bet.
+Set a review date or trigger and name the decision owner. At the effort limit, choose whether to narrow the step, justify another bounded check, wait, or hold off on building under [Sufficient depth](../core.md#sufficient-depth). Remaining questions do not require more research when the next small bet already has enough applicable evidence.
 
 ## B. An architect or CTO joins a running startup
 
@@ -54,7 +54,7 @@ Show the business how the check relates to the result: “Before implementation,
 
 If an external condition blocks part of the solution, name the person responsible for clarifying it and when to revisit the question. Continue safe, independent work: tests, local changes, and preparation of parts that remain useful under either answer. Do not carry a known contradiction into dependent code or a promised deadline.
 
-Leave a brief record in the current task: confirmed evidence, the remaining assumption, the chosen step, boundaries, and the review trigger. If new information changes scope, the person responsible for priorities must explicitly choose the next action. The architect explains options and consequences; silence does not mean agreement with a changed plan.
+Leave a brief record in the current task: confirmed evidence, the remaining assumption, the chosen step, boundaries, and the review trigger. If new information changes scope, the person responsible for priorities explicitly chooses the next action under [Decision / stop](../core.md#decision-stop); the architect explains options and consequences.
 
 If several initiatives compete for the same scarce expertise, you can use [flow control with DBR](outsourcing-presales.md#flow-control). A single hypothesis without this competition does not need it.
 
