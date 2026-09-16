@@ -19,7 +19,7 @@ The rules draw on the author's firsthand practice and [selected external ideas](
 
 Use these instructions in the task or document where the result will be used. They apply the Core; they do not rename it as a sequence of stages.
 
-1. **State the choice or learning goal.** Name the person who needs the answer, its purpose, timing, relevant boundaries, and what must not get worse.
+1. **State the choice or learning goal.** Name who needs the answer, who has authority to choose, the purpose, timing, relevant boundaries, and what must not get worse.
 2. **Identify what is unknown.** Check whether current, applicable evidence already answers it. If several unknowns remain, start with the one whose answer can most change the next action and explain why; defer the rest explicitly.
 3. **Prepare the check.** Choose a suitable permitted method and a person able to carry it out. Before new work, record what different observations would imply, the effort limit, and the review point. An already-answered small question can go directly to the choice.
 4. **Record the result.** State what was observed, its source and conditions, the conclusion, and what remains open. Correct the result and affected work if review finds a material error or missing scenario.
@@ -38,7 +38,8 @@ Current version / location: [date or revision and where this note lives]
 
 ## Before the check
 - Choice or learning goal, and answer needed by:
-- Decision owner; intended benefit; what must not get worse:
+- Decision authority: [one person or an explicit group; required agreement and escalation path if needed]
+- Intended benefit; what must not get worse:
 - Important unknown; why check this one first:
 - Check owner; materials, method, conditions, and required access:
 - Continue with the next bounded action if:
@@ -53,7 +54,7 @@ Current version / location: [date or revision and where this note lives]
 - Actual effort/waiting, where recorded:
 
 ## After the choice
-- Chosen action, owner, and limits — or pending choice and who must answer:
+- Chosen action, who confirmed it, who will carry it out, and limits — or pending choice, who must resolve it, and by when:
 - Affected tasks/documents; changes applied and checked by:
 - Next action/check, responsible person, and review trigger:
 ```
@@ -104,7 +105,11 @@ These tasks can be combined. But one must not silently replace another: architec
 
 ### Minimum rule
 
-> **Before incurring material costs, name the next decision, its connection to a business or user outcome, and the person authorized to make it.**
+> **Before incurring material costs, name the next decision, its connection to a business or user outcome, and the person or explicit group authorized to make it.**
+
+Authority may be shared when product scope, budget, technical risk, security, or contractual commitments have different owners. In that case, record who can decide within each boundary, whose agreement is required, how a disagreement is resolved, and who escalates a delay. A list of stakeholders is not a decision rule.
+
+For brevity, the rest of the playbook uses **decision owner** as a functional label. It may mean one person or the explicit group whose agreement is required for that decision.
 
 For example, instead of “audit the platform”:
 
@@ -307,7 +312,9 @@ Record material decisions where the team actually looks for its tasks and commit
 
 People whose work depends on the decision share an understanding of the next step, its boundaries, and the remaining conditions. Identify who is responsible for carrying out the action. For a consequential choice, also identify who will observe later results, which observation matters to the intended effect, and when or under what conditions to reconsider. Existing tasks, telemetry, operating reviews, or customer contact can support this; a new register is unnecessary. Closing this question does not establish later impact or end an ongoing product team's customer learning. A finite engagement can still finish under its agreed criteria; any gap in responsibility or resources for follow-through must remain visible.
 
-**Analysis may be complete while a management decision is still pending.** Keep those states separate. A lack of response does not mean agreement, nor does it oblige the person doing the work to keep adding to the materials indefinitely. If a decision is pending, identify who needs to answer by when, who will escalate a delay, and which dependent work is not yet authorized.
+**Analysis may be complete while a management decision is still pending.** Keep those states separate. A lack of response does not mean agreement, nor does it oblige the person doing the work to keep adding to the materials indefinitely.
+
+If authority is shared, record the agreement that is still missing rather than reporting that “the group has not decided.” Identify who must answer by when, who will escalate or resolve a conflict within their authority, and which dependent work is not yet authorized. Attendance, silence, or partial agreement is not approval.
 
 Choosing the original option is also a result: discovery does not have to overturn the initial plan to be useful.
 
