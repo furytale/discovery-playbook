@@ -40,7 +40,7 @@ You do not need to read the repository in order. Start with the responsibility i
 | CTO or technical leader | [Decision](core.md#decision), [Sufficient depth](core.md#sufficient-depth), then the relevant context pattern | Which investment or commitment cannot yet be justified, and what basis would be enough to choose? |
 | Business analyst | [Uncertainty](core.md#uncertainty), [Evidence](core.md#evidence), and [Research work](research-work.md) | Which part of the process or requirement is established, disputed, or still assumed—and what decision depends on it? |
 | Solution architect | [Evidence](core.md#evidence), [Sufficient depth](core.md#sufficient-depth), then the relevant context pattern | Which technical condition could invalidate the option, change the estimate, or limit a safe rollout? |
-| Founder or product leader | [Startup](patterns/startup.md) and [Decision](core.md#decision) | Which problem, audience, or bounded bet is worth the next investment? |
+| Founder or product leader | [Decision](core.md#decision), then the relevant [application context](#three-application-contexts) | Which problem, audience, or bounded bet is worth the next investment? |
 
 Roles do not own parts of the Core. The table only offers an entry point. One person may carry several responsibilities, and a consequential question may need more than one kind of competence.
 
