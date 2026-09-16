@@ -14,6 +14,52 @@ The first **decision** means “what choice are we preparing to make?” The fin
 
 The rules draw on the author's firsthand practice and [selected external ideas](README.md#foundations-and-development); the explicitly hypothetical example below illustrates their use rather than reconstructing a particular engagement. The Core does not prescribe team composition, interview counts, a document set, or the duration of discovery.
 
+<a id="start-here"></a>
+## Start here: prepare one bounded question
+
+Use these instructions in the task or document where the result will be used. They apply the Core; they do not rename it as a sequence of stages.
+
+1. **State the choice or learning goal.** Name the person who needs the answer, its purpose, timing, relevant boundaries, and what must not get worse.
+2. **Identify what is unknown.** Check whether current, applicable evidence already answers it. If several unknowns remain, start with the one whose answer can most change the next action and explain why; defer the rest explicitly.
+3. **Prepare the check.** Choose a suitable permitted method and a person able to carry it out. Before new work, record what different observations would imply, the effort limit, and the review point. An already-answered small question can go directly to the choice.
+4. **Record the result.** State what was observed, its source and conditions, the conclusion, and what remains open. Correct the result and affected work if review finds a material error or missing scenario.
+5. **Close this question.** Record the chosen next action or pending choice, update dependent tasks and assumptions, and name the person responsible for follow-through.
+
+A broad inquiry may produce an option map or a better question instead of an implementation recommendation. Use [Research work](research-work.md) when you need to break down a request, coordinate investigators, revise a working answer, or handle differing results.
+
+<a id="working-note"></a>
+## Copyable working note
+
+Copy this into an existing task or document. Fill each part when the information becomes available; the labels do not require three meetings or approvals. Simplify it for a clear small question, but keep what the next action depends on.
+
+```markdown
+# Research question: [short title]
+Current version / location: [date or revision and where this note lives]
+
+## Before the check
+- Choice or learning goal, and answer needed by:
+- Decision owner; intended benefit; what must not get worse:
+- Important unknown; why check this one first:
+- Check owner; materials, method, conditions, and required access:
+- Continue with the next bounded action if:
+- Change or stop that action if:
+- Leave the question open if:
+- Effort limit; review point; excluded questions:
+
+## After the check
+- What was observed; source/result reference and conditions:
+- Conclusion; remaining unknowns and their effect:
+- Recommendation or alternatives; important objections and corrections:
+- Actual effort/waiting, where recorded:
+
+## After the choice
+- Chosen action, owner, and limits — or pending choice and who must answer:
+- Affected tasks/documents; changes applied and checked by:
+- Next action/check, responsible person, and review trigger:
+```
+
+If no new check is needed, put the applicable existing basis under **After the check** rather than fabricating an observation. If access or another prerequisite is missing, leave the observation unfilled and record the missing prerequisite, owner, and review point under **Before the check**. A recommendation stays a recommendation until an authorized person chooses it. An unresolved question with a consequence and next owner can be a usable result.
+
 <a id="core-decision-map"></a>
 ## Map of the next action
 
@@ -39,7 +85,7 @@ flowchart TD
     O -->|No reply| W["Decision<br/>pending"]
 ```
 
-This is a map for choosing the next action, not mandatory discovery stages. New information may change the original question; the restriction applies to dependent work, not automatically to the whole project. At review, compare the result and its limits with the decision and cost limit. Another check requires a new justification and available resources under the [Sufficient depth](#sufficient-depth) rule; exhausting the budget does not establish readiness. Sufficient current evidence allows you to skip new research. The owner may continue, narrow, change, defer, or stop the action, including before every question is closed. Completed analysis with a decision still pending does not authorize dependent implementation—see [Decision / stop](#decision-stop).
+This map chooses the next action; it is not a set of mandatory stages. New information may change the question, and a restriction applies to dependent work rather than automatically to the whole project. At review, compare the result and its limits with the decision. Another check needs a useful purpose and available resources under [Sufficient depth](#sufficient-depth). Sufficient applicable evidence skips new research; a pending choice follows [Decision / stop](#decision-stop).
 
 <a id="decision"></a>
 ## 1. Decision — define the choice to be made
@@ -270,23 +316,70 @@ Choosing the original option is also a result: discovery does not have to overtu
 <a id="example"></a>
 ## One example through the Core
 
-**A hypothetical example, not a reconstruction of an experiment that took place.** A company is considering automating the transfer of a request between two systems.
+### A completed check: can the selected retry path create a duplicate?
 
-**Decision.** Choose the first use case: automatic transfer or a limited process involving an operator.
+> **Independent hypothetical exercise.** The interface, access, records, budget, and outcome below are invented to demonstrate the method. They are not results from the AI teaching case or a client project.
 
-**Uncertainty.** The availability of the required data and the ability to retry safely after a failure have not been established. Questions about a future platform beyond this use case do not yet affect the decision.
+A team is considering unattended creation of fulfillment requests to reduce repeated entry without introducing duplicate active requests. Its candidate resends the same create request after a timeout. The product owner must decide whether that path remains in the pilot.
 
-**Evidence.** Walk through a real request with the operator, compare the fields, and check material integration conditions in a permitted way. Do not substitute a general CRM demonstration for this work.
+The interface in this example accepts complete data and an `externalReference`, stored for correlation without a uniqueness or idempotency promise. An authorized isolated sandbox provides synthetic data, persisted objects, an audit record, and controlled response withholding after confirmed creation; production writes and real data are excluded. The integration engineer runs the check. The integration lead gathers the result and checks changed scope and estimating assumptions; these functions do not require separate job titles.
 
-**Sufficient depth.** Check the inputs, operation result, and material exceptions in the first use case. Do not design every future connector. Define the limits of the check and what a limited pilot will require in advance.
+**Before the check — completed working note**
 
-**Decision / stop.** Use the result to choose a permitted option or stop the dependent part. Record the evidence and boundaries. This example does not assume in advance that the check will succeed.
+- **Choice:** include or exclude the unattended create-and-retry path. The product owner decides before pilot scope is committed.
+- **Purpose:** reduce repeated entry without creating duplicate active requests.
+- **First unknown:** what happens when a caller retries after creation but loses the response. This can exclude the candidate; detailed estimation matters only for an option that remains.
 
-If the necessary information already exists, is current, and applies to the situation, the same decision can be made without a separate research project.
+**Which question first, and why?**
+
+| Question | Effect on the next choice | Order here |
+|---|---|---|
+| Can resend after a lost response create a second active request? | A duplicate excludes this candidate under the stated constraint. | Check now: the sandbox can make the condition observable. |
+| What mapping and implementation work would an acceptable alternative require? | Refines scope and estimate for an option that remains. | Revisit after the retry result; independent field review may continue. |
+| How should a future platform support five more systems? | Does not change this first-system choice. | Defer outside this decision. |
+
+If existing evidence already excluded the candidate, the team would use that basis rather than repeat the test. Without the stated access, it would change the method or hold the dependent choice instead of manufacturing a result.
+
+- **Check:** submit one complete control request normally. For a different logical request, confirm creation from the sandbox record while withholding the response, then retry the same payload and `externalReference` once. Inspect persisted active objects and their correlation to that logical request.
+- **Limit:** up to two hours of engineering effort allocated for this example for preparation, execution, inspection, and recording; review sooner if a duplicate appears. This assigned budget is neither a universal duration nor an AI-derived estimate. Other participants' review effort is separate. Production behavior, other systems, recovery implementation, and business benefit are excluded.
+
+**If we observe this, what happens next?** These rules are fixed before the observation.
+
+| Observation | What it establishes here | Next action |
+|---|---|---|
+| One active object for each logical request in both cases | This check did not reproduce a duplicate under its conditions. | Continue bounded planning; do not claim universal retry safety or authorize production. |
+| Two active objects for the same retried logical request | The selected resend path can duplicate creation in the observed condition. | Exclude this path from the pilot candidate and examine another recovery approach. |
+| Creation, identity, or the lost-response condition cannot be inspected reliably | The check does not answer the question. | Keep it open; change method or defer the dependent action and name its owner. |
+
+**After the check — completed working note**
+
+The observation record is:
+
+```text
+Normal case
+  logical request: control-01
+  one create call -> active object 101
+
+Lost-response case
+  logical request: retry-01
+  first call -> active object 201 committed; response withheld
+  same payload and externalReference retried once
+  second call -> active object 202
+  sandbox inspection -> objects 201 and 202 both active for retry-01
+```
+
+- **Conclusion:** the selected path created two active objects for one logical request under the tested condition, rejecting that candidate under the no-duplicate constraint. This does not establish that every design is unsafe, how often the condition occurs in production, or whether an untested recovery will work. No undocumented guarantee was treated as broken.
+- **Recommendation:** exclude the tested path and investigate how to establish an uncertain outcome before another create. Recorded engineering effort is 70 minutes; review and coordination effort remain unquantified.
+
+**After the choice — completed working note**
+
+- **Choice:** the product owner excludes this path from the pilot. The existing transfer process continues. Another recovery approach remains a proposal for a later bounded check.
+- **Applied changes:** the pilot scope changes from “retry behavior pending verification” to “exclude resend after timeout; reconsider unattended creation only after an alternative recovery design is checked.” The draft estimating assumptions carry the same exclusion. The integration lead inspects both current materials rather than merely acknowledging the finding.
+- **Next question:** the integration engineer checks whether the receiving system can identify an uncertain create's outcome before another attempt, including lookup/correlation limits and any permitted test. Operator confirmation is not assumed to remove the duplicate risk. No implementation, user trial, savings claim, or production authorization follows.
 
 ## Where the Core ends
 
-The Core poses questions about the work. It does not prescribe a sequence of meetings, participants' job titles, or a universal research duration. Differences in application are covered in the three context patterns: [startup](patterns/startup.md), [product company](patterns/product-company.md), and [outsourcing / presales](patterns/outsourcing-presales.md).
+Apply the same questions through the three context patterns: [startup](patterns/startup.md), [product company](patterns/product-company.md), and [outsourcing / presales](patterns/outsourcing-presales.md).
 
 When several initiatives compete for shared constrained capacity, [flow control with DBR](patterns/outsourcing-presales.md#flow-control) may also help. This mechanism does not become a sixth Core step.
 

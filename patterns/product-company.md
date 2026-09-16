@@ -1,6 +1,6 @@
 # Product company: a new direction without putting the existing product on hold
 
-[Back to the Playbook](../README.md) · [Core](../core.md)
+[Back to the Playbook](../README.md) · [Core](../core.md) · [Research work](../research-work.md)
 
 This pattern applies Core to a company that already has users, a working product, and commitments. Data and experience provide a starting point. At the same time, architecture, operations, customer agreements, and compliance requirements constrain the available options. A new direction has to be tested alongside ongoing work.
 
@@ -51,7 +51,7 @@ For example, an AI assistant could prepare drafts for a limited group of operato
 
 A small scale does not remove mandatory security and compliance requirements. Pilot success applies to the tested conditions; a broader launch may require additional evidence.
 
-At the review point, the decision owner chooses whether to expand, narrow, repeat a specific check, wait for a dependency, or stop the initiative. Confirming the original plan is also valid. Carry the completed analysis, conditions, and open questions into the work plan; an exhausted budget and participants' silence do not authorize a launch.
+At the review point, the decision owner chooses whether to expand, narrow, repeat a justified check, wait, or stop. Confirming the original plan is also valid. Carry the analysis, conditions, and open questions into the work plan; launch authority follows [Decision / stop](../core.md#decision-stop), not an exhausted budget or absence of objections.
 
 When closing the pilot question, retain its material assumptions and agree who will observe the delivered result and when to revisit it. For the assistant, that means checking whether continued use actually relates to operator effort, customer service, and consequential errors. Use existing telemetry and operating reviews where they fit; a convenient local signal is not a substitute for the intended effect.
 

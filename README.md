@@ -14,6 +14,17 @@ The playbook is for CTOs, solution architects, business analysts, product leader
 
 **Version 0.1.** An evolving practitioner playbook. Its rules have contextual boundaries and develop through use; effectiveness as a complete method has not been formally measured.
 
+## How to use it
+
+Start with one choice or learning goal. If current, applicable evidence already answers the question, record that basis and take it to the decision owner; do not invent another check. Otherwise:
+
+1. [Prepare one bounded question](core.md#start-here) and decide what observations would support, challenge, or leave it open.
+2. Copy the [working note](core.md#working-note) into the task or document the team already uses.
+3. Use the [completed example](core.md#example) to see the plan, observation, choice, and updated work together.
+4. Open [Research work](research-work.md) when the question needs decomposition, several investigators, a revised working answer, or a checked handoff.
+
+The same person may investigate and decide when they have the authority. These links describe work to perform, not required meetings, roles, documents, or phases. Not every task needs a large discovery effort.
+
 ## Start with the Core
 
 | Element | Main question |
@@ -26,7 +37,7 @@ The playbook is for CTOs, solution architects, business analysts, product leader
 
 **The Core is a reasoning discipline, not five mandatory stages.** Set cost and effort limits before material checks. New information may change the original question. A small, reversible change may need only 20 minutes; a specific unknown in a new direction may call for a separate investigation.
 
-Each Core element explains its purpose, the failure it prevents, a minimum rule, and when it is enough. You can start with the [next-action map](core.md#core-decision-map); there is [one example through the Core](core.md#example) at the end.
+Each Core element explains its purpose, the failure it prevents, a minimum rule, and when it is enough. You can also use the [next-action map](core.md#core-decision-map).
 
 ## Three application contexts
 
@@ -38,35 +49,31 @@ The Core is shared across all three contexts. The application patterns explain d
 
 These are ways to apply the same Core. You can read the Core and go straight to your context.
 
-## How to use it
-
-Start with the next material decision. Identify the unknown that prevents you from justifying it. Choose an appropriate check, define a sufficient result, and set a cost and effort limit. After the check, confirm or change the next step. Running out of budget is a reason to decide whether to continue, narrow, or stop the work; it is not evidence of readiness.
-
-Record the decision where the team already looks for its tasks and commitments. A new document, separate board, or dedicated tool is not required. If the necessary information already exists, is current, and applies to the situation, there is no need to repeat the research.
-
-Not every task needs a large discovery phase. Minimal discovery does not mean skipping mandatory conditions for safe action. An unverified condition limits dependent work but does not necessarily stop everything else.
-
-English is the canonical language of this playbook, future contributions, and the related article.
-
 ## What to add when needed
 
-The playbook does not prescribe a universal set of meetings, documents, job titles, or a fixed research duration. It also does not replace development, quality checks, or management decisions. A coordinator, a reviewer with the relevant expertise, and escalation rules are needed to the extent that findings, authority, or commitments would otherwise be lost; separate staff roles are not required.
+Add coordination, relevant review, and escalation only where findings, authority, or commitments would otherwise be lost. The playbook does not replace development, quality checks, or management decisions.
 
-[AI-assisted research in discovery](ai-assisted-research.md) is an optional guide to investigating a question, coordinating related work with colleagues, and using checked findings. It applies the existing Core within any of the three contexts.
+[Research work](research-work.md) contains the shared procedures for conducting one inquiry, coordinating related questions, and carrying findings into the next action. [AI-assisted research in discovery](ai-assisted-research.md) applies those procedures when AI helps inspect, compare, challenge, or synthesize material. Neither page is a fourth application context or a prerequisite for a clear small question.
 
 **DBR** is described in the section on [managing a discovery queue](patterns/outsourcing-presales.md#flow-control). It is an optional way to align work release with available constrained capacity, not a research method or a sixth Core element. It fits situations where several initiatives compete for one specialist, access to an environment, or another shared limited capability.
 
 DBR is not required for a single bounded question without a flow problem. In a startup or product company, it makes sense when the same competition for shared capacity exists.
 
+English is the canonical language of this playbook, future contributions, and the related article.
+
 ## Foundations and development
 
-I developed this playbook through discovery and AI-assisted research: organizing the work, working with participants and client constraints, and dealing with errors, rework, and decisions. That work involved my own money and effort, company spending, and financial failures, including consequences for clients. The lessons concern concrete work: checking what a finding rests on, preserving useful content through corrections, and keeping the organization manageable for the people doing it.
+I developed this playbook through firsthand discovery and AI-assisted research: organizing investigations, working with participants and constraints, and dealing with errors, rework, and decisions. Notes labeled **From my practice** describe real episodes with identifying details omitted. Teaching examples are explicitly marked as hypothetical.
 
-Notes labeled **From my practice** describe real episodes with identifying details omitted. The end-to-end Core illustration is explicitly hypothetical. These research-practice lessons come from my work; the external influences below are attributed separately.
+Selected refinements draw on Teresa Torres, *Continuous Discovery Habits: Discover Products That Create Customer Value and Business Value* (Product Talk LLC, 2021): intended effects (chs. 3, 11), comparing options and testing assumptions (chs. 2, 5, 9–10), shared understanding (chs. 1–2, 13), and continued learning (chs. 1, 5, 11, 14). Torres's model includes a product trio and at least weekly customer touchpoints by the team building the product. This playbook adapts selected ideas to broader contexts; competence-based participation, no fixed quota of alternatives, and finite-engagement boundaries are the author's adaptations, not a reproduction of her full method. DBR is attributed separately and used only as optional flow control, not as a research method.
 
-Selected refinements draw on Teresa Torres, *Continuous Discovery Habits: Discover Products That Create Customer Value and Business Value* (Product Talk LLC, 2021): intended effects (chs. 3, 11), comparing options and testing assumptions (chs. 2, 5, 9–10), shared understanding (chs. 1–2, 13), and continued learning (chs. 1, 5, 11, 14). Torres's model includes a product trio and at least weekly customer touchpoints by the team building the product. Competence-based participation, no fixed quota of alternatives, and finite-engagement boundaries are this playbook's adaptations to wider contexts, not her full model. DBR has a separate source and purpose.
+Continue to improve the playbook through use: review which assumption changed, where a decision was lost, and what helped people make it. A serious one-off failure can justify a targeted safeguard; recurring problems can reveal where a rule needs to change. A small question does not require a separate retrospective meeting.
 
-After applying the playbook, review which assumption changed, where a decision was lost, and what helped people make it. A serious one-off failure can justify a targeted safeguard; recurring problems can reveal where a rule needs to change. A small question does not require a separate retrospective meeting.
+## License
+
+Except where otherwise noted, the original text and diagrams in this repository are licensed under the [Creative Commons Attribution 4.0 International License](LICENSE).
+
+Copyright © 2026 Anton Kazka. Third-party quotations and linked materials remain the property of their respective owners and are not relicensed by this repository.
 
 ---
 

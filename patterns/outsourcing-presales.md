@@ -1,6 +1,6 @@
 # Outsourcing / presales — from a request to sound commitments
 
-[Back to the Playbook](../README.md) · [Core](../core.md)
+[Back to the Playbook](../README.md) · [Core](../core.md) · [Research work](../research-work.md)
 
 In presales, discovery helps establish what the team can reasonably offer the client, under what conditions, and what still needs to be clarified. The next decision may be small: whether to take on a request, estimate a particular scenario, check an integration, or first clarify the task with the client.
 
@@ -93,7 +93,7 @@ Review both whether a conclusion follows from the material and remains consisten
 
 That approach is useful when a large synthesis loses content; it is not a required document pipeline. Check the assembled result as a whole: the description, diagram, mockup, and estimate must express the same decision with the same constraints.
 
-For a substantial accepted correction, inspect the changed passage in the current version, a visible diff, and affected downstream materials. Check that the correction took effect and preserved needed coverage. An acknowledgment, proposed patch, filename containing “Final,” or tracker status does not establish that the result changed. Technical review, including permitted automated review, does not confer authority to change scope or budget. See [AI-assisted research](../ai-assisted-research.md) for applying these checks during research; client acceptance is covered separately below.
+For a substantial accepted correction, inspect the current passage, a visible diff, and affected downstream materials. Check that the correction took effect and preserved needed coverage; an acknowledgment, proposed patch, filename containing “Final,” or tracker status does not establish a changed result. The [shared research procedure](../research-work.md#check-the-result-challenge) covers this check. Technical review, including permitted automated review, does not confer authority to change scope or budget; client acceptance is covered separately below.
 
 ## Fixed effort and the limits of the result
 
@@ -103,7 +103,7 @@ For example, an allocation of 20–25 hours may define available capacity, but d
 
 If the limit includes a technical test, you can agree to provide a report on the conditions checked and their limitations. The limit alone cannot imply a promise that the required capability will be confirmed. Agree explicitly on acceptance criteria for paid work. The intended business effect explains its purpose; it does not replace those criteria or guarantee results beyond the engagement's scope or control.
 
-At the effort limit, review the evidence gathered. Options include an estimate for the confirmed scope, a narrower option, another bounded check, waiting for an external condition, or stopping. Exhausting the budget does not prove readiness. Remaining questions do not automatically authorize further spending either. Any proposed continuation needs a useful purpose—informing the choice or completing a usable result—and agreement on the scope and effort available; it need not collect new observations.
+At the effort limit, review the evidence and choose an estimate for confirmed scope, a narrower option, another justified check, waiting, or stopping. The full [Sufficient depth](../core.md#sufficient-depth) rule applies: paid capacity neither proves readiness nor automatically authorizes more spending. Continuation needs a useful purpose and agreed scope and effort; it need not collect new observations.
 
 <a id="ai-mediated-review"></a>
 ## When the client uses AI for responses and acceptance

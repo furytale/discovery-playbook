@@ -1,13 +1,11 @@
 <a id="ai-assisted-research-without-losing-the-thread"></a>
 # AI-assisted research in discovery
 
-[Back to the Playbook](README.md) · [Core](core.md) · [One question](#work-through-one-research-question) · [Team coordination](#work-with-other-researchers) · [Teaching case](#worked-example)
+[Back to the Playbook](README.md) · [Core](core.md) · [Shared research procedure](research-work.md) · [Teaching case](#worked-example)
 
 ## What this guide helps you do
 
-Use this guide to investigate a discovery question with AI and colleagues. It is for a BA, architect, or product specialist who needs to learn something, check the answer, and put it to use. The unit of work is a research question; a prompt, conversation, or report serves that work.
-
-The [five-part Core](core.md) identifies the decision, uncertainty, evidence, sufficient depth, and decision / stop. The six functions below explain how to conduct an inquiry within it. A broad inquiry may return an option map or a better next question. A small one may finish in one session using existing evidence.
+Use this guide when AI helps inspect sources, compare options, challenge a conclusion, or prepare a result. The [shared research procedure](research-work.md) explains the six functions and team coordination without requiring AI. This page applies that work to AI contexts and follows one fictional question from inputs through a checked handoff. A prompt, conversation, or report serves the inquiry; it is not the unit of evidence.
 
 ## What a usable research result looks like
 
@@ -17,13 +15,13 @@ Here is a completed working note. Its [inputs and reasoning appear below](#worke
 
 > **Question:** What should we test first to reduce repeated entry without sending incomplete requests into fulfillment?
 >
-> **Findings and grounds:** The operator's account includes obtaining missing information before submission. The interface excerpt describes active creation and required fields; it leaves draft support and retries unclear. The access note records no interface calls.
+> **Grounds:** The operator's account includes obtaining missing information. The interface extract establishes active creation and required fields, but not draft support or retries. No interface calls were made.
 >
-> **Options and recommendation:** Compare an operator-reviewed draft with a clearer manual checklist on screen. Both let us examine information collection without live writes. Unattended creation needs more answers about missing information and retries.
+> **Recommendation:** Compare an operator-reviewed draft with a clearer manual checklist on screen. Unattended creation still needs answers about missing information and retries.
 >
 > **Open questions:** Draft/hold support, actual retry behavior, how widely the reported review work occurs, and whether either candidate reduces total operator effort.
 >
-> **Chosen next action:** The process owner authorizes only a synthetic, screen-only comparison. The BA prepares and reviews it. The architect investigates the documented gaps and requests authorized test access if needed. Implementation and live writes are not approved; the walkthrough has not run.
+> **Choice and limits:** The process owner authorizes only a synthetic, screen-only comparison. The BA prepares it; the architect investigates documented gaps and seeks authorized test access if needed. Implementation and live writes remain unapproved; the walkthrough has not run.
 >
 > **Current version:** Request-transfer inquiry, revision 2. The shared note and affected assignments no longer assume that review merely copies fields.
 
@@ -31,161 +29,73 @@ The recommendation and the owner's choice are separate. Without that choice, the
 
 ## Work through one research question
 
-```mermaid
----
-config:
-  flowchart:
-    nodeSpacing: 15
-    rankSpacing: 25
-    padding: 10
----
-flowchart TD
-    accTitle: One research question and its results
-    accDescr: Set a question and boundaries, gather material with sources, interpret it into an answer or options, check the result, record a chosen action or pending choice, then use the result and learn from observations. The adjacent guidance explains when to return to a particular function.
-    F["Set the question<br/>Question and limits"] --> A["Gather information<br/>Material and sources"]
-    A --> I["Work out the meaning<br/>Answer and options"]
-    I --> C["Check the result<br/>Checked finding"]
-    C --> D["Choose and record<br/>Action or pending choice"]
-    D --> L["Use and learn<br/>Observations and next question"]
-```
-
-Functions can combine and repeat. Return to the function needed by a particular problem, using the checks below and the [repair table](#repair-the-failure-you-actually-have). This is a route for a bounded inquiry, not six compulsory phases, chats, or people.
+The canonical [one-question procedure and diagram](research-work.md#work-through-one-research-question) cover Frame, Acquire, Interpret, Challenge, Decide & record, and Act & learn. Use the function the current question needs. The sections on this page explain the AI-specific action for each function.
 
 ### Set the question (Frame)
 
-State what must be learned, for whom, and what action or understanding it enables. Name the expected result, exclusions, available effort, and method.
+Use the [shared framing procedure](research-work.md#set-the-question-frame), then give AI a bounded piece of work with the current question, relevant inputs, operation, expected result, and limits. The filled request below shows the shape.
 
 #### Break the request into research questions
 
-Use this when a request is too broad to assign or several investigations must contribute to one answer. A clear small question needs no tree.
-
-1. **Write the parent question and limits.** A requested solution is an option or accepted constraint, not a diagnosed cause.
-2. **List the questions it depends on.** Use a shallow outline. Check for a missing perspective or different framing; avoid asserted causes and lists of desired components.
-3. **Explain what each answer could change.** Merge accidental duplicates and show genuine dependencies.
-4. **Select work for now.** Weigh consequences, usefulness to the next choice, dependencies, available evidence, and checking cost. The easiest check may not help. An external constraint can matter even if you cannot change it.
-5. **Assign selected questions** in the [existing table](#agree-the-assignments): human owner, material or method, expected return, and affected colleague or decision. Mark deferred questions and why they can wait.
-6. **Have owners restate the work.** Stop decomposing when each can explain what they will inspect, return, and potentially change in the common answer. Different candidate answers remain welcome.
-
-Keep the selected questions and reasons in the shared note; revise them when findings change the problem. The case's assignments below show this breakdown without a second tracker.
+Use the [question-breakdown procedure and assignment specimen](research-work.md#break-the-request-into-research-questions). Pass only the selected question and needed context into each AI task; a larger question tree in a prompt does not replace human ownership or prioritization.
 
 ### Gather information (Acquire)
 
-Use documents, firsthand accounts, data, observation, or an authorized technical check according to the question. AI can locate and extract relevant passages; people obtain and interpret participant evidence. Keep the source, version, relevant passage, and conditions with the finding, plus gaps that remain.
-
-Ask whether this method can observe what you need to know. Imagined user behavior cannot establish actual behavior. A firsthand account supports what the participant did and observed; a formal summary does not supersede it. Use existing applicable evidence when sufficient. Otherwise change the method or narrow the dependent action.
+Follow the [shared acquisition rule](research-work.md#gather-information-acquire). AI can locate and extract relevant passages from permitted material; people still obtain participant evidence and authorize external checks. Keep source, version, passage, and conditions with the result. A generated example cannot establish observed behavior.
 
 <a id="ask-where-a-repeated-pattern-came-from"></a>
 ### Work out what it means (Interpret)
 
-Compare options against the question and constraints, including the current approach where relevant. Separate observations, explanations, assumptions, and choices. Return the comparison with its grounds, alternatives, limits, and open questions. AI can help organize it; check the particular inference from material to conclusion.
+Use AI to organize a comparison, propose alternatives, or expose relationships, then check the particular inference from material to conclusion under the [shared interpretation procedure](research-work.md#work-out-what-it-means-interpret).
 
 **From my practice.** In research I organized, a review found that requirements inherited from a shared brief and repeated across reports were being used to support common platform capabilities. The review exposed where the repetition came from: the brief itself. The lesson I took was to separate the instructions we gave from the common needs the material could actually support.
 
-Keep imposed requirements distinct from observed demand; a legitimate design constraint need not be a market finding. Retellings and model agreement add no observations, while distinct observations in one file remain distinct. An empty field is unknown, not zero or a negative finding. An absence claim needs a method capable of detecting the event. See [Evidence](core.md#evidence).
+Keep prompt-imposed requirements distinct from observed demand. Model agreement and repeated summaries add no observations, while distinct observations stored in one file remain distinct. An empty field is unknown, not zero or a negative result. See [Evidence](core.md#evidence).
 
 <a id="make-critique-change-the-result"></a>
 ### Check the result (Challenge)
 
-Check important conclusions against their grounds and accepted decisions. Separately check whether the recipient still has the necessary scenarios, constraints, options, and open questions. One person can perform both checks. For important objections, record the correction or why the objection remains unresolved or was rejected.
+Ask AI or a person to challenge the actual claim, source, alternatives, omitted conditions, and recipient's task. Model agreement is not a vote on truth. Apply the [shared challenge procedure](research-work.md#check-the-result-challenge), then inspect the current output and affected materials rather than accepting “updated” as verification.
 
 **From my practice.** In another research effort I organized, a reviewer challenged the ranking of problems, the transfer of conclusions between directions, and links between claims and sources. In the revised result, a claim became a hypothesis and the ranking became an assumption; source use and transfer limits were clarified. The critical pass changed what the team could rely on, beyond improving the prose.
 
-Apply accepted corrections and inspect the current passage, visible diff, and affected material. If a correction removes needed content, restore it consistently with scope or agree to rescope it. For a large synthesis that loses sections, map an outline to its sources, assemble by sections, then check the whole result. If the result needs no correction, continue without inventing a defect or reviewer.
+If a large synthesis loses sections, map an outline to sources, assemble by section, and check the whole result. If it needs no correction, continue without inventing a defect or reviewer.
 
 ### Choose the next action and record it (Decide & record)
 
-Present options, grounds, and consequences to the person authorized to choose. Record the chosen action or explicit pending choice, its owner, conditions, and affected work. Correcting wording within delegation need not go to management; changing scope or commitments needs the appropriate authority.
-
-Check that the next person can tell what is permitted and what remains open. Finished analysis and silence are not approval. A working assumption can support bounded, reversible exploration when its question, owner, and review condition remain visible; it does not authorize deployment.
+Use the [shared decision-recording procedure](research-work.md#choose-the-next-action-and-record-it-decide--record). AI may prepare options and consequences; an authorized person makes the choice. Record a pending choice as pending and keep dependent work within its permitted boundary.
 
 ### Use the result and learn (Act & learn)
 
-Perform the agreed action, or preserve the reason for a pause. Identify who will observe the result, what observation matters, and whether they have access and resources. Return what happened, what assumption changed, and the next question or review condition. The teaching case ends with this work planned: no walkthrough result or benefit has yet been observed.
+Follow the [shared action and learning procedure](research-work.md#use-the-result-and-learn-act--learn). Update the context actually used in later AI work. The teaching case ends with a planned walkthrough; no walkthrough result or benefit has been observed.
 
 <a id="split-work-when-the-separation-helps"></a>
 ## Work with other researchers
 
 **From my practice.** In one discovery engagement, I ran an AI-assisted investigation while a business analyst pursued a separate research track. We started from the same materials but interpreted them differently. We did not exchange intermediate findings or reconcile those interpretations as the work progressed, and we produced two different results. Sharing the inputs had not kept the work aligned.
 
-The coordination practices below are the response developed from discussing that experience, not a claim that we implemented them successfully in that engagement.
+The [shared coordination procedure and diagram](research-work.md#work-with-other-researchers) are the response developed from discussing that experience, not a claim that we implemented them successfully in that engagement. With AI, also check the actual session or tool context after a shared finding changes a premise.
 
 ### Agree the assignments
 
-Before separating, agree the common question, accepted scope, current sources, assumptions, exclusions, expected combined result, available effort, and first comparison point. Distinguish accepted decisions from proposals and older material. Each researcher states their question, result, excluded topics, and answers needed from colleagues. Compare these statements before expensive dependent work.
-
-**Teaching case assignments:** break down the [parent question about request transfer](#what-a-usable-research-result-looks-like) into the selected questions below. Agree the actual effort limit before starting; this illustration supplies no hours.
-
-| Question | Human owner | Result to return | Colleague / dependency and when to share |
-|---|---|---|---|
-| What does the operator do beyond copying fields? | BA | Inspect complete/incomplete cases; return actions, exceptions, and unknowns. | Architect, before unattended design: required human work could change the option. |
-| What does the receiving interface support? | Architect | Inspect documentation and access conditions; return capabilities and draft/hold or retry gaps. | BA, when limits change the scenario or next check; separate documented operations from assumptions. |
-| Which useful comparison is possible before system access? | Research lead with both owners | Combine process findings and permitted methods; return compared options and a next check. | Both owners before handoff: select an informative check and preserve what it cannot answer. |
-
-Prioritize process understanding and technical gaps before detailed unattended design; documentation review can run in parallel. Check access conditions even though the team cannot grant access itself. Defer measuring operational savings until actual use; selecting a next check does not require that result. Bulk processing and delivery-effort questions remain outside this pass.
-
-One person may own several questions. The coordinator exposes dependencies, brings people into the needed discussion, and maintains the combined result; an AI chat is not the accountable owner. Coordination does not give someone authority to settle facts.
-
-```mermaid
----
-config:
-  flowchart:
-    nodeSpacing: 15
-    rankSpacing: 25
-    padding: 8
----
-flowchart TD
-    accTitle: Researchers share findings and update affected work
-    accDescr: Shared questions and inputs lead to owned process and interface questions. Each track uses the research functions above. First findings meet at an interim comparison, which updates shared context and affected assignments. One feedback path returns changes to the owned questions; checked updates support the combined result. Findings may be shared earlier when dependencies change.
-    S["Shared question<br/>and inputs"] --> Q["Owned questions"]
-    Q --> B["Process question<br/>BA"]
-    Q --> A["Interface question<br/>Architect"]
-    B --> I["Interim comparison"]
-    A --> I
-    I --> U["Update shared note<br/>and affected tasks"]
-    U -->|Affected<br/>work| Q
-    U -->|Updates checked| C["Combined<br/>checked result"]
-```
-
-Each track uses the first diagram. Compare initial findings before substantial dependent work and the combined result before handoff. For longer work, agree further checkpoints around dependencies. Share earlier when a finding changes the scenario, scope, method, assumption, or permission for dependent work. The [case exchange](#share-the-finding-and-update-the-work) shows what moves between colleagues.
+Use the [shared assignment table and coordination diagram](research-work.md#agree-the-assignments). A person owns each question and return; an AI conversation does not. Record which current inputs and decisions each AI task receives, especially where independent searches intentionally wait until a comparison point.
 
 ### Share a finding
 
-Send the finding and source, remaining uncertainty, affected work, requested response, and next step. An activity count such as “read ten sources” does not tell a colleague what needs changing.
-
-Intentionally separate searches or critiques can protect independence. Agree their question and comparison point; do not force early sharing of tentative answers. Handle any impact on shared scope, safety, or commitments explicitly.
+Use the [shared finding handoff](research-work.md#share-a-finding). Include the finding and source, remaining uncertainty, affected work, requested response, and next step. Do not forward only an AI output or an activity count.
 
 ### Write a working answer before the final report
 
-After an initial look, use a working answer when separate investigations could develop incompatible premises. A clear small question needs no extra note or checkpoint.
-
-1. **Write a provisional answer** in one or two sentences. If none is defensible, name the alternatives and missing information instead.
-2. **Put the basis beside it.** Separate observations or documentation from untested premises; keep a significant alternative visible.
-3. **Name what could change it.** Connect that uncertainty to an owned question and suitable check. Seek contrary evidence too.
-4. **Compare first findings:** do they support, weaken, change, or leave the answer open? Discuss the grounds. Respect the agreed comparison point for intentionally independent searches.
-5. **Record the revision:** previous answer, finding and basis, revised answer. [Update affected work](#update-affected-work); owners return what changed in assignments or AI contexts, or why their work still applies.
-6. **Separate recommendation from choice.** Ask the authorized owner for the next action where required; repetition does not turn a candidate into an agreed requirement.
-
-Use the shared working note. Check that it contains the current answer, grounds, alternatives, and next owned check. An unchanged answer with an explained basis is valid. The [case update](#share-the-finding-and-update-the-work) shows the revision and its effect on work.
+Use the [shared working-answer procedure](research-work.md#write-a-working-answer-before-the-final-report). After a finding changes it, update the assignment and the actual inputs used by the relevant AI session. The [case update](#share-the-finding-and-update-the-work) shows that change.
 
 <a id="give-the-next-participant-current-usable-context"></a>
 ### Update affected work
 
-Record the change and reason in the shared note. Identify affected questions. Their owners update their assignments, the context actually used in AI sessions or tools, and dependent conclusions. They return what changed or why their work still applies. Verify those materials: a shared folder does not synchronize conversations. Preserve independent permitted work and earlier versions.
-
-Keep one authoritative location per current decision, with derived views where useful. An old prompt must not restore excluded scope. Share relevant original grounds with a reviewer, options and consequences with a decision owner, and current decisions and tasks with a coordinator. Neither the whole archive nor an identical summary suits everyone. Preserve contrary evidence. Working access is not permission to disclose material elsewhere.
+Apply the [shared update rule](research-work.md#update-affected-work). The owner of affected AI work changes the session or tool context actually used and returns what changed or why the work still applies. Inspect that context and resulting comparison: a shared folder does not synchronize conversations, and an old prompt must not restore excluded scope. Authorized access remains separate from permission to disclose material elsewhere.
 
 ### When results differ
 
-Put disputed passages beside the questions and grounds they answer. Identify the difference before asking AI to combine the reports.
-
-| What differs? | Next action |
-|---|---|
-| Question, scenario, terms, or scope | Agree the assignment; update affected tasks and check conclusions based on the earlier reading. |
-| Sources, versions, or facts | Check exact material and conditions; give any missing check a human owner. |
-| Explanation of the same observations | Keep both explanations and grounds; identify a distinguishing check or leave the difference open. |
-| Recommended action | Present options and consequences to the authorized owner. Their choice does not make a disputed fact true. |
-
-Record the correction, choice, or remaining question, its owner, and affected tasks. AI can locate differences; a smooth synthesis must not conceal them.
+Use the [shared difference table](research-work.md#when-results-differ) before asking AI to combine reports. AI can locate differing questions, passages, sources, or explanations; a smooth synthesis must not conceal them or turn model agreement into independent evidence.
 
 <a id="give-ai-a-useful-piece-of-work"></a>
 ## Use AI for a specific piece of the work
@@ -306,8 +216,8 @@ For the planned walkthrough, the BA will examine whether an operator spots missi
 
 Choose measures for three different purposes. For the **question**, observe relevant behavior or technical conditions. For the **work**, record actual effort, waiting, coordination, context recovery, and rework against the agreed limit. For the **action**, compare later observed effects with the intended outcome and review condition. Missing cost data stays missing; planned effort is not actual effort or a saving.
 
-At the effort limit, use the result, narrow the question, change method, agree bounded continuation, or stop. Exhaustion does not prove readiness. A synthesis, explanation, or restoration can justify further bounded work without new observations. Confirming the original plan can be useful. Source counts, chats, meetings, model agreement, and archive size do not establish value.
+At the effort limit, use the result, narrow the question, change method, agree bounded continuation, or stop under [Sufficient depth](core.md#sufficient-depth). A synthesis, explanation, or restoration can justify bounded work without new observations. Confirming the original plan can be useful. Source counts, chats, meetings, model agreement, and archive size do not establish value.
 
 A serious one-off failure can justify a targeted safeguard. Evaluate whether it improves findings, decisions, corrections, rework, or people's load. Keep [sufficient depth](core.md#sufficient-depth) and [decision / stop](core.md#decision-stop) explicit. A finite engagement can end under agreed criteria; continuing observation needs an accepting recipient with access and resources. A name alone does not create that capacity. [Client AI use in acceptance](patterns/outsourcing-presales.md#ai-mediated-review) is a separate commitment question.
 
-**Source and adaptation.** Question breakdown with prioritization and work planning, and an early answer revised through iteration, draw on McKinsey's [“How to master the seven-step problem-solving process”](https://www.mckinsey.com/capabilities/strategy-and-corporate-finance/our-insights/how-to-master-the-seven-step-problem-solving-process) (September 13, 2019; Charles Conn and Hugo Sarrazin with Simon London). The procedures, working note, teaching case, and safeguards here are playbook adaptations, not the full seven-step model or a fixed research deadline. The author's firsthand accounts retain their separate basis.
+The general procedures and their full [source and adaptation note](research-work.md#source-and-adaptation) live in the shared research guide. The firsthand accounts above retain their separate basis.
