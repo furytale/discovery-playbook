@@ -29,7 +29,7 @@ The recommendation and the owner's choice are separate. Without that choice, the
 
 ## Work through one research question
 
-The canonical [one-question procedure and diagram](research-work.md#work-through-one-research-question) cover Frame, Acquire, Interpret, Challenge, Decide & record, and Act & learn. Use the function the question needs. The sections below retain the old deep links and state the AI-specific action.
+The canonical [one-question procedure and diagram](research-work.md#work-through-one-research-question) cover Frame, Acquire, Interpret, Challenge, Decide & record, and Act & learn. Use the function the current question needs. The sections on this page explain the AI-specific action for each function.
 
 ### Set the question (Frame)
 

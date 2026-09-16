@@ -322,7 +322,7 @@ Choosing the original option is also a result: discovery does not have to overtu
 
 A team is considering unattended creation of fulfillment requests to reduce repeated entry without introducing duplicate active requests. Its candidate resends the same create request after a timeout. The product owner must decide whether that path remains in the pilot.
 
-The fictional interface accepts complete data and an `externalReference`, stored for correlation without a uniqueness or idempotency promise. An authorized isolated sandbox provides synthetic data, persisted objects, an audit record, and controlled response withholding after confirmed creation; production writes and real data are excluded. The integration engineer runs the check. The integration lead gathers the result and checks changed scope and estimating assumptions; these functions do not require separate job titles.
+The interface in this example accepts complete data and an `externalReference`, stored for correlation without a uniqueness or idempotency promise. An authorized isolated sandbox provides synthetic data, persisted objects, an audit record, and controlled response withholding after confirmed creation; production writes and real data are excluded. The integration engineer runs the check. The integration lead gathers the result and checks changed scope and estimating assumptions; these functions do not require separate job titles.
 
 **Before the check — completed working note**
 
@@ -341,7 +341,7 @@ The fictional interface accepts complete data and an `externalReference`, stored
 If existing evidence already excluded the candidate, the team would use that basis rather than repeat the test. Without the stated access, it would change the method or hold the dependent choice instead of manufacturing a result.
 
 - **Check:** submit one complete control request normally. For a different logical request, confirm creation from the sandbox record while withholding the response, then retry the same payload and `externalReference` once. Inspect persisted active objects and their correlation to that logical request.
-- **Limit:** up to two hours of fictional engineering effort for preparation, execution, inspection, and recording; review sooner if a duplicate appears. This assigned budget is neither a universal duration nor an AI-derived estimate. Other participants' review effort is separate. Production behavior, other systems, recovery implementation, and business benefit are excluded.
+- **Limit:** up to two hours of engineering effort allocated for this example for preparation, execution, inspection, and recording; review sooner if a duplicate appears. This assigned budget is neither a universal duration nor an AI-derived estimate. Other participants' review effort is separate. Production behavior, other systems, recovery implementation, and business benefit are excluded.
 
 **If we observe this, what happens next?** These rules are fixed before the observation.
 
@@ -353,7 +353,7 @@ If existing evidence already excluded the candidate, the team would use that bas
 
 **After the check — completed working note**
 
-The supplied fictional observation record is:
+The observation record is:
 
 ```text
 Normal case
@@ -369,7 +369,7 @@ Lost-response case
 ```
 
 - **Conclusion:** the selected path created two active objects for one logical request under the tested condition, rejecting that candidate under the no-duplicate constraint. This does not establish that every design is unsafe, how often the condition occurs in production, or whether an untested recovery will work. No undocumented guarantee was treated as broken.
-- **Recommendation:** exclude the tested path and investigate how to establish an uncertain outcome before another create. Recorded fictional engineering effort is 70 minutes; review and coordination effort remain unquantified.
+- **Recommendation:** exclude the tested path and investigate how to establish an uncertain outcome before another create. Recorded engineering effort is 70 minutes; review and coordination effort remain unquantified.
 
 **After the choice — completed working note**
 

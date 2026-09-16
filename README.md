@@ -37,7 +37,7 @@ The same person may investigate and decide when they have the authority. These l
 
 **The Core is a reasoning discipline, not five mandatory stages.** Set cost and effort limits before material checks. New information may change the original question. A small, reversible change may need only 20 minutes; a specific unknown in a new direction may call for a separate investigation.
 
-Each Core element explains its purpose, the failure it prevents, a minimum rule, and when it is enough. The elements are reasoning prompts, not five mandatory stages. You can also use the [next-action map](core.md#core-decision-map).
+Each Core element explains its purpose, the failure it prevents, a minimum rule, and when it is enough. You can also use the [next-action map](core.md#core-decision-map).
 
 ## Three application contexts
 
@@ -63,13 +63,17 @@ English is the canonical language of this playbook, future contributions, and th
 
 ## Foundations and development
 
-I developed this playbook through discovery and AI-assisted research: organizing the work, working with participants and client constraints, and dealing with errors, rework, and decisions. That work involved my own money and effort, company spending, and financial failures, including consequences for clients. The lessons concern concrete work: checking what a finding rests on, preserving useful content through corrections, and keeping the organization manageable for the people doing it.
+I developed this playbook through firsthand discovery and AI-assisted research: organizing investigations, working with participants and constraints, and dealing with errors, rework, and decisions. Notes labeled **From my practice** describe real episodes with identifying details omitted. Teaching examples are explicitly marked as hypothetical.
 
-Notes labeled **From my practice** describe real episodes with identifying details omitted. The end-to-end Core illustration is explicitly hypothetical. These research-practice lessons come from my work; the external influences below are attributed separately.
+Selected refinements draw on Teresa Torres, *Continuous Discovery Habits: Discover Products That Create Customer Value and Business Value* (Product Talk LLC, 2021): intended effects (chs. 3, 11), comparing options and testing assumptions (chs. 2, 5, 9–10), shared understanding (chs. 1–2, 13), and continued learning (chs. 1, 5, 11, 14). Torres's model includes a product trio and at least weekly customer touchpoints by the team building the product. This playbook adapts selected ideas to broader contexts; competence-based participation, no fixed quota of alternatives, and finite-engagement boundaries are the author's adaptations, not a reproduction of her full method. DBR is attributed separately and used only as optional flow control, not as a research method.
 
-Selected refinements draw on Teresa Torres, *Continuous Discovery Habits: Discover Products That Create Customer Value and Business Value* (Product Talk LLC, 2021): intended effects (chs. 3, 11), comparing options and testing assumptions (chs. 2, 5, 9–10), shared understanding (chs. 1–2, 13), and continued learning (chs. 1, 5, 11, 14). Torres's model includes a product trio and at least weekly customer touchpoints by the team building the product. Competence-based participation, no fixed quota of alternatives, and finite-engagement boundaries are this playbook's adaptations to wider contexts, not her full model. DBR has a separate source and purpose.
+Continue to improve the playbook through use: review which assumption changed, where a decision was lost, and what helped people make it. A serious one-off failure can justify a targeted safeguard; recurring problems can reveal where a rule needs to change. A small question does not require a separate retrospective meeting.
 
-After applying the playbook, review which assumption changed, where a decision was lost, and what helped people make it. A serious one-off failure can justify a targeted safeguard; recurring problems can reveal where a rule needs to change. A small question does not require a separate retrospective meeting.
+## License
+
+Except where otherwise noted, the original text and diagrams in this repository are licensed under the [Creative Commons Attribution 4.0 International License](LICENSE).
+
+Copyright © 2026 Anton Kazka. Third-party quotations and linked materials remain the property of their respective owners and are not relicensed by this repository.
 
 ---
 
