@@ -2,7 +2,9 @@
 
 [Back to the Playbook](README.md) · [Core](core.md) · [Working note](core.md#working-note) · [AI-assisted research](ai-assisted-research.md)
 
-Use this page when a question needs new material, related checks, or coordination. A clear small question with sufficient applicable evidence can go straight to a choice. The six functions operate inside the [five-part Core](core.md) and can combine or repeat.
+Use this page when a question needs new material, related checks, or coordination. A clear small question with sufficient applicable evidence can go straight to a choice.
+
+The [Core](core.md) and the six functions on this page do different jobs. The Core tells you what must remain connected for a sound decision. The functions describe the work that may be needed to get there. Start with the function the current problem needs; combine or repeat them as the inquiry changes.
 
 | Core element | Where it appears in the work |
 |---|---|
@@ -11,8 +13,6 @@ Use this page when a question needs new material, related checks, or coordinatio
 | Evidence | Acquire, Interpret, Challenge: obtain suitable material, draw a conclusion, and check its basis, limits, and useful coverage. |
 | Sufficient depth | Before a material check, set the needed result and limits. Revisit them when the result, conditions, or remaining effort change. |
 | Decision / stop | Decide & record, Act & learn: choose or identify a pending choice, update affected work, carry out the agreed action, and return relevant observations. |
-
-Start with the function needed by the current problem.
 
 ## Work through one research question
 
@@ -26,12 +26,15 @@ config:
 ---
 flowchart TD
     accTitle: One research question and its results
-    accDescr: Set a question and boundaries, gather material with sources, interpret it into an answer or options, check the result, record a chosen action or pending choice, then use the result and learn from observations. The adjacent guidance explains when to return to a particular function.
+    accDescr: Frame the question and limits, gather suitable material, interpret it, and challenge the result. A changed question returns to framing; missing or weak grounds return to acquisition. A checked result goes to a choice and action. Later observations may open the next question.
     F["Set the question<br/>Question and limits"] --> A["Gather information<br/>Material and sources"]
     A --> I["Work out the meaning<br/>Answer and options"]
     I --> C["Check the result<br/>Checked finding"]
-    C --> D["Choose and record<br/>Action or pending choice"]
+    C -->|Question changed| F
+    C -->|Missing or weak grounds| A
+    C -->|Ready to choose| D["Choose and record<br/>Action or pending choice"]
     D --> L["Use and learn<br/>Observations and next question"]
+    L -->|New question or changed condition| F
 ```
 
 ### Set the question (Frame)
